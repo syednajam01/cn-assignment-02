@@ -4,6 +4,8 @@ GBN and SR over a simulated satellite link. The transport code is written from s
 
 **The results and video use roll number 0611 and random seed 611 (the integer value of 0611).**
 
+video link : "https://drive.google.com/file/d/1RrtKoboo80VVcFxFKobq5ezko-mzP_3B/view?usp=sharing"
+
 ## run on windows
 
 Python 3.10 or newer is needed. Open PowerShell in the folder where you want the project:
