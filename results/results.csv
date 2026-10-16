@@ -1,0 +1,7 @@
+case,protocol,seed,data_transmitted,retransmissions,acks_transmitted,losses,corruptions,delays,timeouts,delivered,simulation_seconds,throughput_bps,delivery_verified
+A,gbn,611,200,0,200,0,0,0,0,200,25.2134,63458.32,True
+A,sr,611,200,0,200,0,0,0,0,200,25.2134,63458.32,True
+B,gbn,611,266,66,244,43,0,0,17,200,46.861652,34143.056,True
+B,sr,611,239,39,218,39,0,0,39,200,53.745204,29770.098,True
+C,gbn,611,294,94,275,31,23,45,25,200,62.635652,25544.557,True
+C,sr,611,242,42,219,25,15,38,42,200,52.049316,30740.077,True

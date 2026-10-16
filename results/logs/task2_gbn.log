@@ -1,0 +1,82 @@
+  0.000000 send         data id=0 seq=0; base=0 nextseqnum=1 expectedseqnum=0 rcv_base=0 sender_window=[0, 1, 2, 3] receiver_window=[0]
+  0.000000 send         data id=1 seq=1; base=0 nextseqnum=2 expectedseqnum=0 rcv_base=0 sender_window=[0, 1, 2, 3] receiver_window=[0]
+  0.000000 send         data id=2 seq=2; base=0 nextseqnum=3 expectedseqnum=0 rcv_base=0 sender_window=[0, 1, 2, 3] receiver_window=[0]
+  0.000000 loss         data id=2 seq=2 attempt=1
+  0.000000 send         data id=3 seq=3; base=0 nextseqnum=4 expectedseqnum=0 rcv_base=0 sender_window=[0, 1, 2, 3] receiver_window=[0]
+  0.254000 receive      data frame arrived
+  0.254000 deliver      application position=0
+  0.254000 ack send     cumulative ack=0; base=0 nextseqnum=4 expectedseqnum=1 rcv_base=0 sender_window=[0, 1, 2, 3] receiver_window=[1]
+  0.258000 receive      data frame arrived
+  0.258000 deliver      application position=1
+  0.258000 ack send     cumulative ack=1; base=0 nextseqnum=4 expectedseqnum=2 rcv_base=0 sender_window=[0, 1, 2, 3] receiver_window=[2]
+  0.266000 receive      data frame arrived
+  0.266000 discard      out-of-order seq=3; expectedseqnum=2
+  0.266000 ack send     cumulative ack=1; base=0 nextseqnum=4 expectedseqnum=2 rcv_base=0 sender_window=[0, 1, 2, 3] receiver_window=[2]
+  0.504028 ack receive  ack frame arrived
+  0.504028 window       base=1 nextseqnum=4 expectedseqnum=2 rcv_base=0 sender_window=[1, 2, 3, 4] receiver_window=[2]
+  0.504028 send         data id=4 seq=4; base=1 nextseqnum=5 expectedseqnum=2 rcv_base=0 sender_window=[1, 2, 3, 4] receiver_window=[2]
+  0.508028 ack receive  ack frame arrived
+  0.508028 window       base=2 nextseqnum=5 expectedseqnum=2 rcv_base=0 sender_window=[2, 3, 4, 5] receiver_window=[2]
+  0.508028 send         data id=5 seq=5; base=2 nextseqnum=6 expectedseqnum=2 rcv_base=0 sender_window=[2, 3, 4, 5] receiver_window=[2]
+  0.516028 ack receive  ack frame arrived
+  0.516028 ack ignore   duplicate/stale ack=1
+  0.758028 receive      data frame arrived
+  0.758028 discard      out-of-order seq=4; expectedseqnum=2
+  0.758028 ack send     cumulative ack=1; base=2 nextseqnum=6 expectedseqnum=2 rcv_base=0 sender_window=[2, 3, 4, 5] receiver_window=[2]
+  0.762028 receive      data frame arrived
+  0.762028 discard      out-of-order seq=5; expectedseqnum=2
+  0.762028 ack send     cumulative ack=1; base=2 nextseqnum=6 expectedseqnum=2 rcv_base=0 sender_window=[2, 3, 4, 5] receiver_window=[2]
+  1.008056 ack receive  ack frame arrived
+  1.008056 ack ignore   duplicate/stale ack=1
+  1.012056 ack receive  ack frame arrived
+  1.012056 ack ignore   duplicate/stale ack=1
+  2.008028 timeout      oldest unacked id=2
+  2.008028 retransmit   data id=2 seq=2; base=2 nextseqnum=6 expectedseqnum=2 rcv_base=0 sender_window=[2, 3, 4, 5] receiver_window=[2]
+  2.008028 retransmit   data id=3 seq=3; base=2 nextseqnum=6 expectedseqnum=2 rcv_base=0 sender_window=[2, 3, 4, 5] receiver_window=[2]
+  2.008028 retransmit   data id=4 seq=4; base=2 nextseqnum=6 expectedseqnum=2 rcv_base=0 sender_window=[2, 3, 4, 5] receiver_window=[2]
+  2.008028 retransmit   data id=5 seq=5; base=2 nextseqnum=6 expectedseqnum=2 rcv_base=0 sender_window=[2, 3, 4, 5] receiver_window=[2]
+  2.262028 receive      data frame arrived
+  2.262028 deliver      application position=2
+  2.262028 ack send     cumulative ack=2; base=2 nextseqnum=6 expectedseqnum=3 rcv_base=0 sender_window=[2, 3, 4, 5] receiver_window=[3]
+  2.266028 receive      data frame arrived
+  2.266028 deliver      application position=3
+  2.266028 ack send     cumulative ack=3; base=2 nextseqnum=6 expectedseqnum=4 rcv_base=0 sender_window=[2, 3, 4, 5] receiver_window=[4]
+  2.270028 receive      data frame arrived
+  2.270028 deliver      application position=4
+  2.270028 ack send     cumulative ack=4; base=2 nextseqnum=6 expectedseqnum=5 rcv_base=0 sender_window=[2, 3, 4, 5] receiver_window=[5]
+  2.274028 receive      data frame arrived
+  2.274028 deliver      application position=5
+  2.274028 ack send     cumulative ack=5; base=2 nextseqnum=6 expectedseqnum=6 rcv_base=0 sender_window=[2, 3, 4, 5] receiver_window=[6]
+  2.512056 ack receive  ack frame arrived
+  2.512056 window       base=3 nextseqnum=6 expectedseqnum=6 rcv_base=0 sender_window=[3, 4, 5, 6] receiver_window=[6]
+  2.512056 send         data id=6 seq=6; base=3 nextseqnum=7 expectedseqnum=6 rcv_base=0 sender_window=[3, 4, 5, 6] receiver_window=[6]
+  2.516056 ack receive  ack frame arrived
+  2.516056 window       base=4 nextseqnum=7 expectedseqnum=6 rcv_base=0 sender_window=[4, 5, 6, 7] receiver_window=[6]
+  2.516056 send         data id=7 seq=7; base=4 nextseqnum=8 expectedseqnum=6 rcv_base=0 sender_window=[4, 5, 6, 7] receiver_window=[6]
+  2.520056 ack receive  ack frame arrived
+  2.520056 window       base=5 nextseqnum=8 expectedseqnum=6 rcv_base=0 sender_window=[5, 6, 7, 8] receiver_window=[6]
+  2.520056 send         data id=8 seq=8; base=5 nextseqnum=9 expectedseqnum=6 rcv_base=0 sender_window=[5, 6, 7, 8] receiver_window=[6]
+  2.524056 ack receive  ack frame arrived
+  2.524056 window       base=6 nextseqnum=9 expectedseqnum=6 rcv_base=0 sender_window=[6, 7, 8, 9] receiver_window=[6]
+  2.524056 send         data id=9 seq=9; base=6 nextseqnum=10 expectedseqnum=6 rcv_base=0 sender_window=[6, 7, 8, 9] receiver_window=[6]
+  2.766056 receive      data frame arrived
+  2.766056 deliver      application position=6
+  2.766056 ack send     cumulative ack=6; base=6 nextseqnum=10 expectedseqnum=7 rcv_base=0 sender_window=[6, 7, 8, 9] receiver_window=[7]
+  2.770056 receive      data frame arrived
+  2.770056 deliver      application position=7
+  2.770056 ack send     cumulative ack=7; base=6 nextseqnum=10 expectedseqnum=8 rcv_base=0 sender_window=[6, 7, 8, 9] receiver_window=[8]
+  2.774056 receive      data frame arrived
+  2.774056 deliver      application position=8
+  2.774056 ack send     cumulative ack=8; base=6 nextseqnum=10 expectedseqnum=9 rcv_base=0 sender_window=[6, 7, 8, 9] receiver_window=[9]
+  2.778056 receive      data frame arrived
+  2.778056 deliver      application position=9
+  2.778056 ack send     cumulative ack=9; base=6 nextseqnum=10 expectedseqnum=10 rcv_base=0 sender_window=[6, 7, 8, 9] receiver_window=[10]
+  3.016084 ack receive  ack frame arrived
+  3.016084 window       base=7 nextseqnum=10 expectedseqnum=10 rcv_base=0 sender_window=[7, 8, 9, 10] receiver_window=[10]
+  3.020084 ack receive  ack frame arrived
+  3.020084 window       base=8 nextseqnum=10 expectedseqnum=10 rcv_base=0 sender_window=[8, 9, 10, 11] receiver_window=[10]
+  3.024084 ack receive  ack frame arrived
+  3.024084 window       base=9 nextseqnum=10 expectedseqnum=10 rcv_base=0 sender_window=[9, 10, 11, 12] receiver_window=[10]
+  3.028084 ack receive  ack frame arrived
+  3.028084 window       base=10 nextseqnum=10 expectedseqnum=10 rcv_base=0 sender_window=[10, 11, 12, 13] receiver_window=[10]
+{"protocol": "gbn", "seed": 611, "data_transmitted": 14, "retransmissions": 4, "acks_transmitted": 13, "losses": 1, "corruptions": 0, "delays": 0, "timeouts": 1, "delivered": 10, "simulation_seconds": 3.028084, "throughput_bps": 26419.346, "delivery_verified": true}

@@ -1,0 +1,1600 @@
+  0.000000 send         data id=0 seq=0; base=0 nextseqnum=1 expectedseqnum=0 rcv_base=0 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  0.000000 send         data id=1 seq=1; base=0 nextseqnum=2 expectedseqnum=0 rcv_base=0 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  0.000000 send         data id=2 seq=2; base=0 nextseqnum=3 expectedseqnum=0 rcv_base=0 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  0.000000 send         data id=3 seq=3; base=0 nextseqnum=4 expectedseqnum=0 rcv_base=0 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  0.254000 receive      data frame arrived
+  0.254000 buffer       seq=0; rcv_base=0
+  0.254000 ack send     individual ack=0; base=0 nextseqnum=4 expectedseqnum=0 rcv_base=0 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  0.254000 deliver      application position=0
+  0.254000 window       base=0 nextseqnum=4 expectedseqnum=0 rcv_base=1 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  0.258000 receive      data frame arrived
+  0.258000 buffer       seq=1; rcv_base=1
+  0.258000 ack send     individual ack=1; base=0 nextseqnum=4 expectedseqnum=0 rcv_base=1 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  0.258000 deliver      application position=1
+  0.258000 window       base=0 nextseqnum=4 expectedseqnum=0 rcv_base=2 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  0.262000 receive      data frame arrived
+  0.262000 buffer       seq=2; rcv_base=2
+  0.262000 ack send     individual ack=2; base=0 nextseqnum=4 expectedseqnum=0 rcv_base=2 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  0.262000 deliver      application position=2
+  0.262000 window       base=0 nextseqnum=4 expectedseqnum=0 rcv_base=3 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  0.266000 receive      data frame arrived
+  0.266000 buffer       seq=3; rcv_base=3
+  0.266000 ack send     individual ack=3; base=0 nextseqnum=4 expectedseqnum=0 rcv_base=3 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  0.266000 deliver      application position=3
+  0.266000 window       base=0 nextseqnum=4 expectedseqnum=0 rcv_base=4 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+  0.504028 ack receive  ack frame arrived
+  0.504028 window       base=1 nextseqnum=4 expectedseqnum=0 rcv_base=4 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  0.504028 send         data id=4 seq=4; base=1 nextseqnum=5 expectedseqnum=0 rcv_base=4 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  0.508028 ack receive  ack frame arrived
+  0.508028 window       base=2 nextseqnum=5 expectedseqnum=0 rcv_base=4 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  0.508028 send         data id=5 seq=5; base=2 nextseqnum=6 expectedseqnum=0 rcv_base=4 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  0.512028 ack receive  ack frame arrived
+  0.512028 window       base=3 nextseqnum=6 expectedseqnum=0 rcv_base=4 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  0.512028 send         data id=6 seq=6; base=3 nextseqnum=7 expectedseqnum=0 rcv_base=4 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  0.516028 ack receive  ack frame arrived
+  0.516028 window       base=4 nextseqnum=7 expectedseqnum=0 rcv_base=4 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  0.516028 send         data id=7 seq=7; base=4 nextseqnum=8 expectedseqnum=0 rcv_base=4 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  0.758028 receive      data frame arrived
+  0.758028 buffer       seq=4; rcv_base=4
+  0.758028 ack send     individual ack=4; base=4 nextseqnum=8 expectedseqnum=0 rcv_base=4 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  0.758028 deliver      application position=4
+  0.758028 window       base=4 nextseqnum=8 expectedseqnum=0 rcv_base=5 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  0.762028 receive      data frame arrived
+  0.762028 buffer       seq=5; rcv_base=5
+  0.762028 ack send     individual ack=5; base=4 nextseqnum=8 expectedseqnum=0 rcv_base=5 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  0.762028 deliver      application position=5
+  0.762028 window       base=4 nextseqnum=8 expectedseqnum=0 rcv_base=6 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  0.766028 receive      data frame arrived
+  0.766028 buffer       seq=6; rcv_base=6
+  0.766028 ack send     individual ack=6; base=4 nextseqnum=8 expectedseqnum=0 rcv_base=6 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  0.766028 deliver      application position=6
+  0.766028 window       base=4 nextseqnum=8 expectedseqnum=0 rcv_base=7 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  0.770028 receive      data frame arrived
+  0.770028 buffer       seq=7; rcv_base=7
+  0.770028 ack send     individual ack=7; base=4 nextseqnum=8 expectedseqnum=0 rcv_base=7 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  0.770028 deliver      application position=7
+  0.770028 window       base=4 nextseqnum=8 expectedseqnum=0 rcv_base=8 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+  1.008056 ack receive  ack frame arrived
+  1.008056 window       base=5 nextseqnum=8 expectedseqnum=0 rcv_base=8 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  1.008056 send         data id=8 seq=0; base=5 nextseqnum=9 expectedseqnum=0 rcv_base=8 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  1.012056 ack receive  ack frame arrived
+  1.012056 window       base=6 nextseqnum=9 expectedseqnum=0 rcv_base=8 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  1.012056 send         data id=9 seq=1; base=6 nextseqnum=10 expectedseqnum=0 rcv_base=8 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  1.016056 ack receive  ack frame arrived
+  1.016056 window       base=7 nextseqnum=10 expectedseqnum=0 rcv_base=8 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  1.016056 send         data id=10 seq=2; base=7 nextseqnum=11 expectedseqnum=0 rcv_base=8 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  1.020056 ack receive  ack frame arrived
+  1.020056 window       base=8 nextseqnum=11 expectedseqnum=0 rcv_base=8 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  1.020056 send         data id=11 seq=3; base=8 nextseqnum=12 expectedseqnum=0 rcv_base=8 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  1.262056 receive      data frame arrived
+  1.262056 buffer       seq=0; rcv_base=0
+  1.262056 ack send     individual ack=0; base=8 nextseqnum=12 expectedseqnum=0 rcv_base=8 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  1.262056 deliver      application position=8
+  1.262056 window       base=8 nextseqnum=12 expectedseqnum=0 rcv_base=9 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  1.266056 receive      data frame arrived
+  1.266056 buffer       seq=1; rcv_base=1
+  1.266056 ack send     individual ack=1; base=8 nextseqnum=12 expectedseqnum=0 rcv_base=9 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  1.266056 deliver      application position=9
+  1.266056 window       base=8 nextseqnum=12 expectedseqnum=0 rcv_base=10 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  1.270056 receive      data frame arrived
+  1.270056 buffer       seq=2; rcv_base=2
+  1.270056 ack send     individual ack=2; base=8 nextseqnum=12 expectedseqnum=0 rcv_base=10 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  1.270056 deliver      application position=10
+  1.270056 window       base=8 nextseqnum=12 expectedseqnum=0 rcv_base=11 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  1.274056 receive      data frame arrived
+  1.274056 buffer       seq=3; rcv_base=3
+  1.274056 ack send     individual ack=3; base=8 nextseqnum=12 expectedseqnum=0 rcv_base=11 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  1.274056 deliver      application position=11
+  1.274056 window       base=8 nextseqnum=12 expectedseqnum=0 rcv_base=12 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+  1.512084 ack receive  ack frame arrived
+  1.512084 window       base=9 nextseqnum=12 expectedseqnum=0 rcv_base=12 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  1.512084 send         data id=12 seq=4; base=9 nextseqnum=13 expectedseqnum=0 rcv_base=12 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  1.516084 ack receive  ack frame arrived
+  1.516084 window       base=10 nextseqnum=13 expectedseqnum=0 rcv_base=12 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  1.516084 send         data id=13 seq=5; base=10 nextseqnum=14 expectedseqnum=0 rcv_base=12 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  1.520084 ack receive  ack frame arrived
+  1.520084 window       base=11 nextseqnum=14 expectedseqnum=0 rcv_base=12 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  1.520084 send         data id=14 seq=6; base=11 nextseqnum=15 expectedseqnum=0 rcv_base=12 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  1.524084 ack receive  ack frame arrived
+  1.524084 window       base=12 nextseqnum=15 expectedseqnum=0 rcv_base=12 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  1.524084 send         data id=15 seq=7; base=12 nextseqnum=16 expectedseqnum=0 rcv_base=12 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  1.766084 receive      data frame arrived
+  1.766084 buffer       seq=4; rcv_base=4
+  1.766084 ack send     individual ack=4; base=12 nextseqnum=16 expectedseqnum=0 rcv_base=12 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  1.766084 deliver      application position=12
+  1.766084 window       base=12 nextseqnum=16 expectedseqnum=0 rcv_base=13 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  1.770084 receive      data frame arrived
+  1.770084 buffer       seq=5; rcv_base=5
+  1.770084 ack send     individual ack=5; base=12 nextseqnum=16 expectedseqnum=0 rcv_base=13 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  1.770084 deliver      application position=13
+  1.770084 window       base=12 nextseqnum=16 expectedseqnum=0 rcv_base=14 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  1.774084 receive      data frame arrived
+  1.774084 buffer       seq=6; rcv_base=6
+  1.774084 ack send     individual ack=6; base=12 nextseqnum=16 expectedseqnum=0 rcv_base=14 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  1.774084 deliver      application position=14
+  1.774084 window       base=12 nextseqnum=16 expectedseqnum=0 rcv_base=15 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  1.778084 receive      data frame arrived
+  1.778084 buffer       seq=7; rcv_base=7
+  1.778084 ack send     individual ack=7; base=12 nextseqnum=16 expectedseqnum=0 rcv_base=15 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  1.778084 deliver      application position=15
+  1.778084 window       base=12 nextseqnum=16 expectedseqnum=0 rcv_base=16 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+  2.016112 ack receive  ack frame arrived
+  2.016112 window       base=13 nextseqnum=16 expectedseqnum=0 rcv_base=16 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  2.016112 send         data id=16 seq=0; base=13 nextseqnum=17 expectedseqnum=0 rcv_base=16 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  2.020112 ack receive  ack frame arrived
+  2.020112 window       base=14 nextseqnum=17 expectedseqnum=0 rcv_base=16 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  2.020112 send         data id=17 seq=1; base=14 nextseqnum=18 expectedseqnum=0 rcv_base=16 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  2.024112 ack receive  ack frame arrived
+  2.024112 window       base=15 nextseqnum=18 expectedseqnum=0 rcv_base=16 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  2.024112 send         data id=18 seq=2; base=15 nextseqnum=19 expectedseqnum=0 rcv_base=16 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  2.028112 ack receive  ack frame arrived
+  2.028112 window       base=16 nextseqnum=19 expectedseqnum=0 rcv_base=16 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  2.028112 send         data id=19 seq=3; base=16 nextseqnum=20 expectedseqnum=0 rcv_base=16 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  2.270112 receive      data frame arrived
+  2.270112 buffer       seq=0; rcv_base=0
+  2.270112 ack send     individual ack=0; base=16 nextseqnum=20 expectedseqnum=0 rcv_base=16 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  2.270112 deliver      application position=16
+  2.270112 window       base=16 nextseqnum=20 expectedseqnum=0 rcv_base=17 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  2.274112 receive      data frame arrived
+  2.274112 buffer       seq=1; rcv_base=1
+  2.274112 ack send     individual ack=1; base=16 nextseqnum=20 expectedseqnum=0 rcv_base=17 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  2.274112 deliver      application position=17
+  2.274112 window       base=16 nextseqnum=20 expectedseqnum=0 rcv_base=18 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  2.278112 receive      data frame arrived
+  2.278112 buffer       seq=2; rcv_base=2
+  2.278112 ack send     individual ack=2; base=16 nextseqnum=20 expectedseqnum=0 rcv_base=18 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  2.278112 deliver      application position=18
+  2.278112 window       base=16 nextseqnum=20 expectedseqnum=0 rcv_base=19 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  2.282112 receive      data frame arrived
+  2.282112 buffer       seq=3; rcv_base=3
+  2.282112 ack send     individual ack=3; base=16 nextseqnum=20 expectedseqnum=0 rcv_base=19 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  2.282112 deliver      application position=19
+  2.282112 window       base=16 nextseqnum=20 expectedseqnum=0 rcv_base=20 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+  2.520140 ack receive  ack frame arrived
+  2.520140 window       base=17 nextseqnum=20 expectedseqnum=0 rcv_base=20 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  2.520140 send         data id=20 seq=4; base=17 nextseqnum=21 expectedseqnum=0 rcv_base=20 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  2.524140 ack receive  ack frame arrived
+  2.524140 window       base=18 nextseqnum=21 expectedseqnum=0 rcv_base=20 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  2.524140 send         data id=21 seq=5; base=18 nextseqnum=22 expectedseqnum=0 rcv_base=20 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  2.528140 ack receive  ack frame arrived
+  2.528140 window       base=19 nextseqnum=22 expectedseqnum=0 rcv_base=20 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  2.528140 send         data id=22 seq=6; base=19 nextseqnum=23 expectedseqnum=0 rcv_base=20 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  2.532140 ack receive  ack frame arrived
+  2.532140 window       base=20 nextseqnum=23 expectedseqnum=0 rcv_base=20 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  2.532140 send         data id=23 seq=7; base=20 nextseqnum=24 expectedseqnum=0 rcv_base=20 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  2.774140 receive      data frame arrived
+  2.774140 buffer       seq=4; rcv_base=4
+  2.774140 ack send     individual ack=4; base=20 nextseqnum=24 expectedseqnum=0 rcv_base=20 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  2.774140 deliver      application position=20
+  2.774140 window       base=20 nextseqnum=24 expectedseqnum=0 rcv_base=21 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  2.778140 receive      data frame arrived
+  2.778140 buffer       seq=5; rcv_base=5
+  2.778140 ack send     individual ack=5; base=20 nextseqnum=24 expectedseqnum=0 rcv_base=21 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  2.778140 deliver      application position=21
+  2.778140 window       base=20 nextseqnum=24 expectedseqnum=0 rcv_base=22 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  2.782140 receive      data frame arrived
+  2.782140 buffer       seq=6; rcv_base=6
+  2.782140 ack send     individual ack=6; base=20 nextseqnum=24 expectedseqnum=0 rcv_base=22 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  2.782140 deliver      application position=22
+  2.782140 window       base=20 nextseqnum=24 expectedseqnum=0 rcv_base=23 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  2.786140 receive      data frame arrived
+  2.786140 buffer       seq=7; rcv_base=7
+  2.786140 ack send     individual ack=7; base=20 nextseqnum=24 expectedseqnum=0 rcv_base=23 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  2.786140 deliver      application position=23
+  2.786140 window       base=20 nextseqnum=24 expectedseqnum=0 rcv_base=24 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+  3.024168 ack receive  ack frame arrived
+  3.024168 window       base=21 nextseqnum=24 expectedseqnum=0 rcv_base=24 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  3.024168 send         data id=24 seq=0; base=21 nextseqnum=25 expectedseqnum=0 rcv_base=24 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  3.028168 ack receive  ack frame arrived
+  3.028168 window       base=22 nextseqnum=25 expectedseqnum=0 rcv_base=24 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  3.028168 send         data id=25 seq=1; base=22 nextseqnum=26 expectedseqnum=0 rcv_base=24 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  3.032168 ack receive  ack frame arrived
+  3.032168 window       base=23 nextseqnum=26 expectedseqnum=0 rcv_base=24 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  3.032168 send         data id=26 seq=2; base=23 nextseqnum=27 expectedseqnum=0 rcv_base=24 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  3.036168 ack receive  ack frame arrived
+  3.036168 window       base=24 nextseqnum=27 expectedseqnum=0 rcv_base=24 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  3.036168 send         data id=27 seq=3; base=24 nextseqnum=28 expectedseqnum=0 rcv_base=24 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  3.278168 receive      data frame arrived
+  3.278168 buffer       seq=0; rcv_base=0
+  3.278168 ack send     individual ack=0; base=24 nextseqnum=28 expectedseqnum=0 rcv_base=24 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  3.278168 deliver      application position=24
+  3.278168 window       base=24 nextseqnum=28 expectedseqnum=0 rcv_base=25 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  3.282168 receive      data frame arrived
+  3.282168 buffer       seq=1; rcv_base=1
+  3.282168 ack send     individual ack=1; base=24 nextseqnum=28 expectedseqnum=0 rcv_base=25 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  3.282168 deliver      application position=25
+  3.282168 window       base=24 nextseqnum=28 expectedseqnum=0 rcv_base=26 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  3.286168 receive      data frame arrived
+  3.286168 buffer       seq=2; rcv_base=2
+  3.286168 ack send     individual ack=2; base=24 nextseqnum=28 expectedseqnum=0 rcv_base=26 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  3.286168 deliver      application position=26
+  3.286168 window       base=24 nextseqnum=28 expectedseqnum=0 rcv_base=27 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  3.290168 receive      data frame arrived
+  3.290168 buffer       seq=3; rcv_base=3
+  3.290168 ack send     individual ack=3; base=24 nextseqnum=28 expectedseqnum=0 rcv_base=27 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  3.290168 deliver      application position=27
+  3.290168 window       base=24 nextseqnum=28 expectedseqnum=0 rcv_base=28 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+  3.528196 ack receive  ack frame arrived
+  3.528196 window       base=25 nextseqnum=28 expectedseqnum=0 rcv_base=28 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  3.528196 send         data id=28 seq=4; base=25 nextseqnum=29 expectedseqnum=0 rcv_base=28 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  3.532196 ack receive  ack frame arrived
+  3.532196 window       base=26 nextseqnum=29 expectedseqnum=0 rcv_base=28 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  3.532196 send         data id=29 seq=5; base=26 nextseqnum=30 expectedseqnum=0 rcv_base=28 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  3.536196 ack receive  ack frame arrived
+  3.536196 window       base=27 nextseqnum=30 expectedseqnum=0 rcv_base=28 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  3.536196 send         data id=30 seq=6; base=27 nextseqnum=31 expectedseqnum=0 rcv_base=28 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  3.540196 ack receive  ack frame arrived
+  3.540196 window       base=28 nextseqnum=31 expectedseqnum=0 rcv_base=28 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  3.540196 send         data id=31 seq=7; base=28 nextseqnum=32 expectedseqnum=0 rcv_base=28 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  3.782196 receive      data frame arrived
+  3.782196 buffer       seq=4; rcv_base=4
+  3.782196 ack send     individual ack=4; base=28 nextseqnum=32 expectedseqnum=0 rcv_base=28 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  3.782196 deliver      application position=28
+  3.782196 window       base=28 nextseqnum=32 expectedseqnum=0 rcv_base=29 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  3.786196 receive      data frame arrived
+  3.786196 buffer       seq=5; rcv_base=5
+  3.786196 ack send     individual ack=5; base=28 nextseqnum=32 expectedseqnum=0 rcv_base=29 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  3.786196 deliver      application position=29
+  3.786196 window       base=28 nextseqnum=32 expectedseqnum=0 rcv_base=30 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  3.790196 receive      data frame arrived
+  3.790196 buffer       seq=6; rcv_base=6
+  3.790196 ack send     individual ack=6; base=28 nextseqnum=32 expectedseqnum=0 rcv_base=30 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  3.790196 deliver      application position=30
+  3.790196 window       base=28 nextseqnum=32 expectedseqnum=0 rcv_base=31 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  3.794196 receive      data frame arrived
+  3.794196 buffer       seq=7; rcv_base=7
+  3.794196 ack send     individual ack=7; base=28 nextseqnum=32 expectedseqnum=0 rcv_base=31 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  3.794196 deliver      application position=31
+  3.794196 window       base=28 nextseqnum=32 expectedseqnum=0 rcv_base=32 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+  4.032224 ack receive  ack frame arrived
+  4.032224 window       base=29 nextseqnum=32 expectedseqnum=0 rcv_base=32 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  4.032224 send         data id=32 seq=0; base=29 nextseqnum=33 expectedseqnum=0 rcv_base=32 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  4.036224 ack receive  ack frame arrived
+  4.036224 window       base=30 nextseqnum=33 expectedseqnum=0 rcv_base=32 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  4.036224 send         data id=33 seq=1; base=30 nextseqnum=34 expectedseqnum=0 rcv_base=32 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  4.040224 ack receive  ack frame arrived
+  4.040224 window       base=31 nextseqnum=34 expectedseqnum=0 rcv_base=32 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  4.040224 send         data id=34 seq=2; base=31 nextseqnum=35 expectedseqnum=0 rcv_base=32 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  4.044224 ack receive  ack frame arrived
+  4.044224 window       base=32 nextseqnum=35 expectedseqnum=0 rcv_base=32 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  4.044224 send         data id=35 seq=3; base=32 nextseqnum=36 expectedseqnum=0 rcv_base=32 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  4.286224 receive      data frame arrived
+  4.286224 buffer       seq=0; rcv_base=0
+  4.286224 ack send     individual ack=0; base=32 nextseqnum=36 expectedseqnum=0 rcv_base=32 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  4.286224 deliver      application position=32
+  4.286224 window       base=32 nextseqnum=36 expectedseqnum=0 rcv_base=33 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  4.290224 receive      data frame arrived
+  4.290224 buffer       seq=1; rcv_base=1
+  4.290224 ack send     individual ack=1; base=32 nextseqnum=36 expectedseqnum=0 rcv_base=33 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  4.290224 deliver      application position=33
+  4.290224 window       base=32 nextseqnum=36 expectedseqnum=0 rcv_base=34 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  4.294224 receive      data frame arrived
+  4.294224 buffer       seq=2; rcv_base=2
+  4.294224 ack send     individual ack=2; base=32 nextseqnum=36 expectedseqnum=0 rcv_base=34 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  4.294224 deliver      application position=34
+  4.294224 window       base=32 nextseqnum=36 expectedseqnum=0 rcv_base=35 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  4.298224 receive      data frame arrived
+  4.298224 buffer       seq=3; rcv_base=3
+  4.298224 ack send     individual ack=3; base=32 nextseqnum=36 expectedseqnum=0 rcv_base=35 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  4.298224 deliver      application position=35
+  4.298224 window       base=32 nextseqnum=36 expectedseqnum=0 rcv_base=36 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+  4.536252 ack receive  ack frame arrived
+  4.536252 window       base=33 nextseqnum=36 expectedseqnum=0 rcv_base=36 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  4.536252 send         data id=36 seq=4; base=33 nextseqnum=37 expectedseqnum=0 rcv_base=36 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  4.540252 ack receive  ack frame arrived
+  4.540252 window       base=34 nextseqnum=37 expectedseqnum=0 rcv_base=36 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  4.540252 send         data id=37 seq=5; base=34 nextseqnum=38 expectedseqnum=0 rcv_base=36 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  4.544252 ack receive  ack frame arrived
+  4.544252 window       base=35 nextseqnum=38 expectedseqnum=0 rcv_base=36 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  4.544252 send         data id=38 seq=6; base=35 nextseqnum=39 expectedseqnum=0 rcv_base=36 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  4.548252 ack receive  ack frame arrived
+  4.548252 window       base=36 nextseqnum=39 expectedseqnum=0 rcv_base=36 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  4.548252 send         data id=39 seq=7; base=36 nextseqnum=40 expectedseqnum=0 rcv_base=36 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  4.790252 receive      data frame arrived
+  4.790252 buffer       seq=4; rcv_base=4
+  4.790252 ack send     individual ack=4; base=36 nextseqnum=40 expectedseqnum=0 rcv_base=36 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  4.790252 deliver      application position=36
+  4.790252 window       base=36 nextseqnum=40 expectedseqnum=0 rcv_base=37 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  4.794252 receive      data frame arrived
+  4.794252 buffer       seq=5; rcv_base=5
+  4.794252 ack send     individual ack=5; base=36 nextseqnum=40 expectedseqnum=0 rcv_base=37 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  4.794252 deliver      application position=37
+  4.794252 window       base=36 nextseqnum=40 expectedseqnum=0 rcv_base=38 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  4.798252 receive      data frame arrived
+  4.798252 buffer       seq=6; rcv_base=6
+  4.798252 ack send     individual ack=6; base=36 nextseqnum=40 expectedseqnum=0 rcv_base=38 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  4.798252 deliver      application position=38
+  4.798252 window       base=36 nextseqnum=40 expectedseqnum=0 rcv_base=39 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  4.802252 receive      data frame arrived
+  4.802252 buffer       seq=7; rcv_base=7
+  4.802252 ack send     individual ack=7; base=36 nextseqnum=40 expectedseqnum=0 rcv_base=39 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  4.802252 deliver      application position=39
+  4.802252 window       base=36 nextseqnum=40 expectedseqnum=0 rcv_base=40 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+  5.040280 ack receive  ack frame arrived
+  5.040280 window       base=37 nextseqnum=40 expectedseqnum=0 rcv_base=40 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  5.040280 send         data id=40 seq=0; base=37 nextseqnum=41 expectedseqnum=0 rcv_base=40 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  5.044280 ack receive  ack frame arrived
+  5.044280 window       base=38 nextseqnum=41 expectedseqnum=0 rcv_base=40 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  5.044280 send         data id=41 seq=1; base=38 nextseqnum=42 expectedseqnum=0 rcv_base=40 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  5.048280 ack receive  ack frame arrived
+  5.048280 window       base=39 nextseqnum=42 expectedseqnum=0 rcv_base=40 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  5.048280 send         data id=42 seq=2; base=39 nextseqnum=43 expectedseqnum=0 rcv_base=40 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  5.052280 ack receive  ack frame arrived
+  5.052280 window       base=40 nextseqnum=43 expectedseqnum=0 rcv_base=40 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  5.052280 send         data id=43 seq=3; base=40 nextseqnum=44 expectedseqnum=0 rcv_base=40 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  5.294280 receive      data frame arrived
+  5.294280 buffer       seq=0; rcv_base=0
+  5.294280 ack send     individual ack=0; base=40 nextseqnum=44 expectedseqnum=0 rcv_base=40 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  5.294280 deliver      application position=40
+  5.294280 window       base=40 nextseqnum=44 expectedseqnum=0 rcv_base=41 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  5.298280 receive      data frame arrived
+  5.298280 buffer       seq=1; rcv_base=1
+  5.298280 ack send     individual ack=1; base=40 nextseqnum=44 expectedseqnum=0 rcv_base=41 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  5.298280 deliver      application position=41
+  5.298280 window       base=40 nextseqnum=44 expectedseqnum=0 rcv_base=42 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  5.302280 receive      data frame arrived
+  5.302280 buffer       seq=2; rcv_base=2
+  5.302280 ack send     individual ack=2; base=40 nextseqnum=44 expectedseqnum=0 rcv_base=42 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  5.302280 deliver      application position=42
+  5.302280 window       base=40 nextseqnum=44 expectedseqnum=0 rcv_base=43 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  5.306280 receive      data frame arrived
+  5.306280 buffer       seq=3; rcv_base=3
+  5.306280 ack send     individual ack=3; base=40 nextseqnum=44 expectedseqnum=0 rcv_base=43 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  5.306280 deliver      application position=43
+  5.306280 window       base=40 nextseqnum=44 expectedseqnum=0 rcv_base=44 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+  5.544308 ack receive  ack frame arrived
+  5.544308 window       base=41 nextseqnum=44 expectedseqnum=0 rcv_base=44 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  5.544308 send         data id=44 seq=4; base=41 nextseqnum=45 expectedseqnum=0 rcv_base=44 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  5.548308 ack receive  ack frame arrived
+  5.548308 window       base=42 nextseqnum=45 expectedseqnum=0 rcv_base=44 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  5.548308 send         data id=45 seq=5; base=42 nextseqnum=46 expectedseqnum=0 rcv_base=44 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  5.552308 ack receive  ack frame arrived
+  5.552308 window       base=43 nextseqnum=46 expectedseqnum=0 rcv_base=44 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  5.552308 send         data id=46 seq=6; base=43 nextseqnum=47 expectedseqnum=0 rcv_base=44 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  5.556308 ack receive  ack frame arrived
+  5.556308 window       base=44 nextseqnum=47 expectedseqnum=0 rcv_base=44 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  5.556308 send         data id=47 seq=7; base=44 nextseqnum=48 expectedseqnum=0 rcv_base=44 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  5.798308 receive      data frame arrived
+  5.798308 buffer       seq=4; rcv_base=4
+  5.798308 ack send     individual ack=4; base=44 nextseqnum=48 expectedseqnum=0 rcv_base=44 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  5.798308 deliver      application position=44
+  5.798308 window       base=44 nextseqnum=48 expectedseqnum=0 rcv_base=45 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  5.802308 receive      data frame arrived
+  5.802308 buffer       seq=5; rcv_base=5
+  5.802308 ack send     individual ack=5; base=44 nextseqnum=48 expectedseqnum=0 rcv_base=45 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  5.802308 deliver      application position=45
+  5.802308 window       base=44 nextseqnum=48 expectedseqnum=0 rcv_base=46 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  5.806308 receive      data frame arrived
+  5.806308 buffer       seq=6; rcv_base=6
+  5.806308 ack send     individual ack=6; base=44 nextseqnum=48 expectedseqnum=0 rcv_base=46 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  5.806308 deliver      application position=46
+  5.806308 window       base=44 nextseqnum=48 expectedseqnum=0 rcv_base=47 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  5.810308 receive      data frame arrived
+  5.810308 buffer       seq=7; rcv_base=7
+  5.810308 ack send     individual ack=7; base=44 nextseqnum=48 expectedseqnum=0 rcv_base=47 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  5.810308 deliver      application position=47
+  5.810308 window       base=44 nextseqnum=48 expectedseqnum=0 rcv_base=48 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+  6.048336 ack receive  ack frame arrived
+  6.048336 window       base=45 nextseqnum=48 expectedseqnum=0 rcv_base=48 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  6.048336 send         data id=48 seq=0; base=45 nextseqnum=49 expectedseqnum=0 rcv_base=48 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  6.052336 ack receive  ack frame arrived
+  6.052336 window       base=46 nextseqnum=49 expectedseqnum=0 rcv_base=48 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  6.052336 send         data id=49 seq=1; base=46 nextseqnum=50 expectedseqnum=0 rcv_base=48 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  6.056336 ack receive  ack frame arrived
+  6.056336 window       base=47 nextseqnum=50 expectedseqnum=0 rcv_base=48 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  6.056336 send         data id=50 seq=2; base=47 nextseqnum=51 expectedseqnum=0 rcv_base=48 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  6.060336 ack receive  ack frame arrived
+  6.060336 window       base=48 nextseqnum=51 expectedseqnum=0 rcv_base=48 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  6.060336 send         data id=51 seq=3; base=48 nextseqnum=52 expectedseqnum=0 rcv_base=48 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  6.302336 receive      data frame arrived
+  6.302336 buffer       seq=0; rcv_base=0
+  6.302336 ack send     individual ack=0; base=48 nextseqnum=52 expectedseqnum=0 rcv_base=48 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  6.302336 deliver      application position=48
+  6.302336 window       base=48 nextseqnum=52 expectedseqnum=0 rcv_base=49 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  6.306336 receive      data frame arrived
+  6.306336 buffer       seq=1; rcv_base=1
+  6.306336 ack send     individual ack=1; base=48 nextseqnum=52 expectedseqnum=0 rcv_base=49 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  6.306336 deliver      application position=49
+  6.306336 window       base=48 nextseqnum=52 expectedseqnum=0 rcv_base=50 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  6.310336 receive      data frame arrived
+  6.310336 buffer       seq=2; rcv_base=2
+  6.310336 ack send     individual ack=2; base=48 nextseqnum=52 expectedseqnum=0 rcv_base=50 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  6.310336 deliver      application position=50
+  6.310336 window       base=48 nextseqnum=52 expectedseqnum=0 rcv_base=51 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  6.314336 receive      data frame arrived
+  6.314336 buffer       seq=3; rcv_base=3
+  6.314336 ack send     individual ack=3; base=48 nextseqnum=52 expectedseqnum=0 rcv_base=51 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  6.314336 deliver      application position=51
+  6.314336 window       base=48 nextseqnum=52 expectedseqnum=0 rcv_base=52 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+  6.552364 ack receive  ack frame arrived
+  6.552364 window       base=49 nextseqnum=52 expectedseqnum=0 rcv_base=52 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  6.552364 send         data id=52 seq=4; base=49 nextseqnum=53 expectedseqnum=0 rcv_base=52 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  6.556364 ack receive  ack frame arrived
+  6.556364 window       base=50 nextseqnum=53 expectedseqnum=0 rcv_base=52 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  6.556364 send         data id=53 seq=5; base=50 nextseqnum=54 expectedseqnum=0 rcv_base=52 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  6.560364 ack receive  ack frame arrived
+  6.560364 window       base=51 nextseqnum=54 expectedseqnum=0 rcv_base=52 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  6.560364 send         data id=54 seq=6; base=51 nextseqnum=55 expectedseqnum=0 rcv_base=52 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  6.564364 ack receive  ack frame arrived
+  6.564364 window       base=52 nextseqnum=55 expectedseqnum=0 rcv_base=52 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  6.564364 send         data id=55 seq=7; base=52 nextseqnum=56 expectedseqnum=0 rcv_base=52 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  6.806364 receive      data frame arrived
+  6.806364 buffer       seq=4; rcv_base=4
+  6.806364 ack send     individual ack=4; base=52 nextseqnum=56 expectedseqnum=0 rcv_base=52 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  6.806364 deliver      application position=52
+  6.806364 window       base=52 nextseqnum=56 expectedseqnum=0 rcv_base=53 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  6.810364 receive      data frame arrived
+  6.810364 buffer       seq=5; rcv_base=5
+  6.810364 ack send     individual ack=5; base=52 nextseqnum=56 expectedseqnum=0 rcv_base=53 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  6.810364 deliver      application position=53
+  6.810364 window       base=52 nextseqnum=56 expectedseqnum=0 rcv_base=54 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  6.814364 receive      data frame arrived
+  6.814364 buffer       seq=6; rcv_base=6
+  6.814364 ack send     individual ack=6; base=52 nextseqnum=56 expectedseqnum=0 rcv_base=54 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  6.814364 deliver      application position=54
+  6.814364 window       base=52 nextseqnum=56 expectedseqnum=0 rcv_base=55 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  6.818364 receive      data frame arrived
+  6.818364 buffer       seq=7; rcv_base=7
+  6.818364 ack send     individual ack=7; base=52 nextseqnum=56 expectedseqnum=0 rcv_base=55 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  6.818364 deliver      application position=55
+  6.818364 window       base=52 nextseqnum=56 expectedseqnum=0 rcv_base=56 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+  7.056392 ack receive  ack frame arrived
+  7.056392 window       base=53 nextseqnum=56 expectedseqnum=0 rcv_base=56 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  7.056392 send         data id=56 seq=0; base=53 nextseqnum=57 expectedseqnum=0 rcv_base=56 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  7.060392 ack receive  ack frame arrived
+  7.060392 window       base=54 nextseqnum=57 expectedseqnum=0 rcv_base=56 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  7.060392 send         data id=57 seq=1; base=54 nextseqnum=58 expectedseqnum=0 rcv_base=56 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  7.064392 ack receive  ack frame arrived
+  7.064392 window       base=55 nextseqnum=58 expectedseqnum=0 rcv_base=56 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  7.064392 send         data id=58 seq=2; base=55 nextseqnum=59 expectedseqnum=0 rcv_base=56 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  7.068392 ack receive  ack frame arrived
+  7.068392 window       base=56 nextseqnum=59 expectedseqnum=0 rcv_base=56 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  7.068392 send         data id=59 seq=3; base=56 nextseqnum=60 expectedseqnum=0 rcv_base=56 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  7.310392 receive      data frame arrived
+  7.310392 buffer       seq=0; rcv_base=0
+  7.310392 ack send     individual ack=0; base=56 nextseqnum=60 expectedseqnum=0 rcv_base=56 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  7.310392 deliver      application position=56
+  7.310392 window       base=56 nextseqnum=60 expectedseqnum=0 rcv_base=57 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  7.314392 receive      data frame arrived
+  7.314392 buffer       seq=1; rcv_base=1
+  7.314392 ack send     individual ack=1; base=56 nextseqnum=60 expectedseqnum=0 rcv_base=57 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  7.314392 deliver      application position=57
+  7.314392 window       base=56 nextseqnum=60 expectedseqnum=0 rcv_base=58 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  7.318392 receive      data frame arrived
+  7.318392 buffer       seq=2; rcv_base=2
+  7.318392 ack send     individual ack=2; base=56 nextseqnum=60 expectedseqnum=0 rcv_base=58 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  7.318392 deliver      application position=58
+  7.318392 window       base=56 nextseqnum=60 expectedseqnum=0 rcv_base=59 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  7.322392 receive      data frame arrived
+  7.322392 buffer       seq=3; rcv_base=3
+  7.322392 ack send     individual ack=3; base=56 nextseqnum=60 expectedseqnum=0 rcv_base=59 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  7.322392 deliver      application position=59
+  7.322392 window       base=56 nextseqnum=60 expectedseqnum=0 rcv_base=60 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+  7.560420 ack receive  ack frame arrived
+  7.560420 window       base=57 nextseqnum=60 expectedseqnum=0 rcv_base=60 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  7.560420 send         data id=60 seq=4; base=57 nextseqnum=61 expectedseqnum=0 rcv_base=60 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  7.564420 ack receive  ack frame arrived
+  7.564420 window       base=58 nextseqnum=61 expectedseqnum=0 rcv_base=60 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  7.564420 send         data id=61 seq=5; base=58 nextseqnum=62 expectedseqnum=0 rcv_base=60 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  7.568420 ack receive  ack frame arrived
+  7.568420 window       base=59 nextseqnum=62 expectedseqnum=0 rcv_base=60 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  7.568420 send         data id=62 seq=6; base=59 nextseqnum=63 expectedseqnum=0 rcv_base=60 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  7.572420 ack receive  ack frame arrived
+  7.572420 window       base=60 nextseqnum=63 expectedseqnum=0 rcv_base=60 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  7.572420 send         data id=63 seq=7; base=60 nextseqnum=64 expectedseqnum=0 rcv_base=60 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  7.814420 receive      data frame arrived
+  7.814420 buffer       seq=4; rcv_base=4
+  7.814420 ack send     individual ack=4; base=60 nextseqnum=64 expectedseqnum=0 rcv_base=60 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  7.814420 deliver      application position=60
+  7.814420 window       base=60 nextseqnum=64 expectedseqnum=0 rcv_base=61 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  7.818420 receive      data frame arrived
+  7.818420 buffer       seq=5; rcv_base=5
+  7.818420 ack send     individual ack=5; base=60 nextseqnum=64 expectedseqnum=0 rcv_base=61 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  7.818420 deliver      application position=61
+  7.818420 window       base=60 nextseqnum=64 expectedseqnum=0 rcv_base=62 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  7.822420 receive      data frame arrived
+  7.822420 buffer       seq=6; rcv_base=6
+  7.822420 ack send     individual ack=6; base=60 nextseqnum=64 expectedseqnum=0 rcv_base=62 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  7.822420 deliver      application position=62
+  7.822420 window       base=60 nextseqnum=64 expectedseqnum=0 rcv_base=63 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  7.826420 receive      data frame arrived
+  7.826420 buffer       seq=7; rcv_base=7
+  7.826420 ack send     individual ack=7; base=60 nextseqnum=64 expectedseqnum=0 rcv_base=63 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  7.826420 deliver      application position=63
+  7.826420 window       base=60 nextseqnum=64 expectedseqnum=0 rcv_base=64 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+  8.064448 ack receive  ack frame arrived
+  8.064448 window       base=61 nextseqnum=64 expectedseqnum=0 rcv_base=64 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  8.064448 send         data id=64 seq=0; base=61 nextseqnum=65 expectedseqnum=0 rcv_base=64 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  8.068448 ack receive  ack frame arrived
+  8.068448 window       base=62 nextseqnum=65 expectedseqnum=0 rcv_base=64 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  8.068448 send         data id=65 seq=1; base=62 nextseqnum=66 expectedseqnum=0 rcv_base=64 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  8.072448 ack receive  ack frame arrived
+  8.072448 window       base=63 nextseqnum=66 expectedseqnum=0 rcv_base=64 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  8.072448 send         data id=66 seq=2; base=63 nextseqnum=67 expectedseqnum=0 rcv_base=64 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  8.076448 ack receive  ack frame arrived
+  8.076448 window       base=64 nextseqnum=67 expectedseqnum=0 rcv_base=64 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  8.076448 send         data id=67 seq=3; base=64 nextseqnum=68 expectedseqnum=0 rcv_base=64 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  8.318448 receive      data frame arrived
+  8.318448 buffer       seq=0; rcv_base=0
+  8.318448 ack send     individual ack=0; base=64 nextseqnum=68 expectedseqnum=0 rcv_base=64 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  8.318448 deliver      application position=64
+  8.318448 window       base=64 nextseqnum=68 expectedseqnum=0 rcv_base=65 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  8.322448 receive      data frame arrived
+  8.322448 buffer       seq=1; rcv_base=1
+  8.322448 ack send     individual ack=1; base=64 nextseqnum=68 expectedseqnum=0 rcv_base=65 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  8.322448 deliver      application position=65
+  8.322448 window       base=64 nextseqnum=68 expectedseqnum=0 rcv_base=66 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  8.326448 receive      data frame arrived
+  8.326448 buffer       seq=2; rcv_base=2
+  8.326448 ack send     individual ack=2; base=64 nextseqnum=68 expectedseqnum=0 rcv_base=66 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  8.326448 deliver      application position=66
+  8.326448 window       base=64 nextseqnum=68 expectedseqnum=0 rcv_base=67 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  8.330448 receive      data frame arrived
+  8.330448 buffer       seq=3; rcv_base=3
+  8.330448 ack send     individual ack=3; base=64 nextseqnum=68 expectedseqnum=0 rcv_base=67 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  8.330448 deliver      application position=67
+  8.330448 window       base=64 nextseqnum=68 expectedseqnum=0 rcv_base=68 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+  8.568476 ack receive  ack frame arrived
+  8.568476 window       base=65 nextseqnum=68 expectedseqnum=0 rcv_base=68 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  8.568476 send         data id=68 seq=4; base=65 nextseqnum=69 expectedseqnum=0 rcv_base=68 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  8.572476 ack receive  ack frame arrived
+  8.572476 window       base=66 nextseqnum=69 expectedseqnum=0 rcv_base=68 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  8.572476 send         data id=69 seq=5; base=66 nextseqnum=70 expectedseqnum=0 rcv_base=68 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  8.576476 ack receive  ack frame arrived
+  8.576476 window       base=67 nextseqnum=70 expectedseqnum=0 rcv_base=68 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  8.576476 send         data id=70 seq=6; base=67 nextseqnum=71 expectedseqnum=0 rcv_base=68 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  8.580476 ack receive  ack frame arrived
+  8.580476 window       base=68 nextseqnum=71 expectedseqnum=0 rcv_base=68 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  8.580476 send         data id=71 seq=7; base=68 nextseqnum=72 expectedseqnum=0 rcv_base=68 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  8.822476 receive      data frame arrived
+  8.822476 buffer       seq=4; rcv_base=4
+  8.822476 ack send     individual ack=4; base=68 nextseqnum=72 expectedseqnum=0 rcv_base=68 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  8.822476 deliver      application position=68
+  8.822476 window       base=68 nextseqnum=72 expectedseqnum=0 rcv_base=69 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  8.826476 receive      data frame arrived
+  8.826476 buffer       seq=5; rcv_base=5
+  8.826476 ack send     individual ack=5; base=68 nextseqnum=72 expectedseqnum=0 rcv_base=69 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  8.826476 deliver      application position=69
+  8.826476 window       base=68 nextseqnum=72 expectedseqnum=0 rcv_base=70 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  8.830476 receive      data frame arrived
+  8.830476 buffer       seq=6; rcv_base=6
+  8.830476 ack send     individual ack=6; base=68 nextseqnum=72 expectedseqnum=0 rcv_base=70 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  8.830476 deliver      application position=70
+  8.830476 window       base=68 nextseqnum=72 expectedseqnum=0 rcv_base=71 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  8.834476 receive      data frame arrived
+  8.834476 buffer       seq=7; rcv_base=7
+  8.834476 ack send     individual ack=7; base=68 nextseqnum=72 expectedseqnum=0 rcv_base=71 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  8.834476 deliver      application position=71
+  8.834476 window       base=68 nextseqnum=72 expectedseqnum=0 rcv_base=72 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+  9.072504 ack receive  ack frame arrived
+  9.072504 window       base=69 nextseqnum=72 expectedseqnum=0 rcv_base=72 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  9.072504 send         data id=72 seq=0; base=69 nextseqnum=73 expectedseqnum=0 rcv_base=72 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+  9.076504 ack receive  ack frame arrived
+  9.076504 window       base=70 nextseqnum=73 expectedseqnum=0 rcv_base=72 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  9.076504 send         data id=73 seq=1; base=70 nextseqnum=74 expectedseqnum=0 rcv_base=72 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+  9.080504 ack receive  ack frame arrived
+  9.080504 window       base=71 nextseqnum=74 expectedseqnum=0 rcv_base=72 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  9.080504 send         data id=74 seq=2; base=71 nextseqnum=75 expectedseqnum=0 rcv_base=72 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+  9.084504 ack receive  ack frame arrived
+  9.084504 window       base=72 nextseqnum=75 expectedseqnum=0 rcv_base=72 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  9.084504 send         data id=75 seq=3; base=72 nextseqnum=76 expectedseqnum=0 rcv_base=72 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  9.326504 receive      data frame arrived
+  9.326504 buffer       seq=0; rcv_base=0
+  9.326504 ack send     individual ack=0; base=72 nextseqnum=76 expectedseqnum=0 rcv_base=72 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+  9.326504 deliver      application position=72
+  9.326504 window       base=72 nextseqnum=76 expectedseqnum=0 rcv_base=73 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  9.330504 receive      data frame arrived
+  9.330504 buffer       seq=1; rcv_base=1
+  9.330504 ack send     individual ack=1; base=72 nextseqnum=76 expectedseqnum=0 rcv_base=73 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+  9.330504 deliver      application position=73
+  9.330504 window       base=72 nextseqnum=76 expectedseqnum=0 rcv_base=74 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  9.334504 receive      data frame arrived
+  9.334504 buffer       seq=2; rcv_base=2
+  9.334504 ack send     individual ack=2; base=72 nextseqnum=76 expectedseqnum=0 rcv_base=74 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+  9.334504 deliver      application position=74
+  9.334504 window       base=72 nextseqnum=76 expectedseqnum=0 rcv_base=75 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  9.338504 receive      data frame arrived
+  9.338504 buffer       seq=3; rcv_base=3
+  9.338504 ack send     individual ack=3; base=72 nextseqnum=76 expectedseqnum=0 rcv_base=75 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+  9.338504 deliver      application position=75
+  9.338504 window       base=72 nextseqnum=76 expectedseqnum=0 rcv_base=76 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+  9.576532 ack receive  ack frame arrived
+  9.576532 window       base=73 nextseqnum=76 expectedseqnum=0 rcv_base=76 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  9.576532 send         data id=76 seq=4; base=73 nextseqnum=77 expectedseqnum=0 rcv_base=76 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+  9.580532 ack receive  ack frame arrived
+  9.580532 window       base=74 nextseqnum=77 expectedseqnum=0 rcv_base=76 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  9.580532 send         data id=77 seq=5; base=74 nextseqnum=78 expectedseqnum=0 rcv_base=76 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+  9.584532 ack receive  ack frame arrived
+  9.584532 window       base=75 nextseqnum=78 expectedseqnum=0 rcv_base=76 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  9.584532 send         data id=78 seq=6; base=75 nextseqnum=79 expectedseqnum=0 rcv_base=76 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+  9.588532 ack receive  ack frame arrived
+  9.588532 window       base=76 nextseqnum=79 expectedseqnum=0 rcv_base=76 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  9.588532 send         data id=79 seq=7; base=76 nextseqnum=80 expectedseqnum=0 rcv_base=76 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  9.830532 receive      data frame arrived
+  9.830532 buffer       seq=4; rcv_base=4
+  9.830532 ack send     individual ack=4; base=76 nextseqnum=80 expectedseqnum=0 rcv_base=76 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+  9.830532 deliver      application position=76
+  9.830532 window       base=76 nextseqnum=80 expectedseqnum=0 rcv_base=77 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  9.834532 receive      data frame arrived
+  9.834532 buffer       seq=5; rcv_base=5
+  9.834532 ack send     individual ack=5; base=76 nextseqnum=80 expectedseqnum=0 rcv_base=77 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+  9.834532 deliver      application position=77
+  9.834532 window       base=76 nextseqnum=80 expectedseqnum=0 rcv_base=78 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  9.838532 receive      data frame arrived
+  9.838532 buffer       seq=6; rcv_base=6
+  9.838532 ack send     individual ack=6; base=76 nextseqnum=80 expectedseqnum=0 rcv_base=78 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+  9.838532 deliver      application position=78
+  9.838532 window       base=76 nextseqnum=80 expectedseqnum=0 rcv_base=79 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  9.842532 receive      data frame arrived
+  9.842532 buffer       seq=7; rcv_base=7
+  9.842532 ack send     individual ack=7; base=76 nextseqnum=80 expectedseqnum=0 rcv_base=79 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+  9.842532 deliver      application position=79
+  9.842532 window       base=76 nextseqnum=80 expectedseqnum=0 rcv_base=80 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+ 10.080560 ack receive  ack frame arrived
+ 10.080560 window       base=77 nextseqnum=80 expectedseqnum=0 rcv_base=80 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 10.080560 send         data id=80 seq=0; base=77 nextseqnum=81 expectedseqnum=0 rcv_base=80 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 10.084560 ack receive  ack frame arrived
+ 10.084560 window       base=78 nextseqnum=81 expectedseqnum=0 rcv_base=80 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 10.084560 send         data id=81 seq=1; base=78 nextseqnum=82 expectedseqnum=0 rcv_base=80 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 10.088560 ack receive  ack frame arrived
+ 10.088560 window       base=79 nextseqnum=82 expectedseqnum=0 rcv_base=80 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 10.088560 send         data id=82 seq=2; base=79 nextseqnum=83 expectedseqnum=0 rcv_base=80 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 10.092560 ack receive  ack frame arrived
+ 10.092560 window       base=80 nextseqnum=83 expectedseqnum=0 rcv_base=80 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 10.092560 send         data id=83 seq=3; base=80 nextseqnum=84 expectedseqnum=0 rcv_base=80 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 10.334560 receive      data frame arrived
+ 10.334560 buffer       seq=0; rcv_base=0
+ 10.334560 ack send     individual ack=0; base=80 nextseqnum=84 expectedseqnum=0 rcv_base=80 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 10.334560 deliver      application position=80
+ 10.334560 window       base=80 nextseqnum=84 expectedseqnum=0 rcv_base=81 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 10.338560 receive      data frame arrived
+ 10.338560 buffer       seq=1; rcv_base=1
+ 10.338560 ack send     individual ack=1; base=80 nextseqnum=84 expectedseqnum=0 rcv_base=81 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 10.338560 deliver      application position=81
+ 10.338560 window       base=80 nextseqnum=84 expectedseqnum=0 rcv_base=82 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 10.342560 receive      data frame arrived
+ 10.342560 buffer       seq=2; rcv_base=2
+ 10.342560 ack send     individual ack=2; base=80 nextseqnum=84 expectedseqnum=0 rcv_base=82 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 10.342560 deliver      application position=82
+ 10.342560 window       base=80 nextseqnum=84 expectedseqnum=0 rcv_base=83 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 10.346560 receive      data frame arrived
+ 10.346560 buffer       seq=3; rcv_base=3
+ 10.346560 ack send     individual ack=3; base=80 nextseqnum=84 expectedseqnum=0 rcv_base=83 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 10.346560 deliver      application position=83
+ 10.346560 window       base=80 nextseqnum=84 expectedseqnum=0 rcv_base=84 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+ 10.584588 ack receive  ack frame arrived
+ 10.584588 window       base=81 nextseqnum=84 expectedseqnum=0 rcv_base=84 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 10.584588 send         data id=84 seq=4; base=81 nextseqnum=85 expectedseqnum=0 rcv_base=84 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 10.588588 ack receive  ack frame arrived
+ 10.588588 window       base=82 nextseqnum=85 expectedseqnum=0 rcv_base=84 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 10.588588 send         data id=85 seq=5; base=82 nextseqnum=86 expectedseqnum=0 rcv_base=84 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 10.592588 ack receive  ack frame arrived
+ 10.592588 window       base=83 nextseqnum=86 expectedseqnum=0 rcv_base=84 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 10.592588 send         data id=86 seq=6; base=83 nextseqnum=87 expectedseqnum=0 rcv_base=84 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 10.596588 ack receive  ack frame arrived
+ 10.596588 window       base=84 nextseqnum=87 expectedseqnum=0 rcv_base=84 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 10.596588 send         data id=87 seq=7; base=84 nextseqnum=88 expectedseqnum=0 rcv_base=84 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 10.838588 receive      data frame arrived
+ 10.838588 buffer       seq=4; rcv_base=4
+ 10.838588 ack send     individual ack=4; base=84 nextseqnum=88 expectedseqnum=0 rcv_base=84 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 10.838588 deliver      application position=84
+ 10.838588 window       base=84 nextseqnum=88 expectedseqnum=0 rcv_base=85 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 10.842588 receive      data frame arrived
+ 10.842588 buffer       seq=5; rcv_base=5
+ 10.842588 ack send     individual ack=5; base=84 nextseqnum=88 expectedseqnum=0 rcv_base=85 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 10.842588 deliver      application position=85
+ 10.842588 window       base=84 nextseqnum=88 expectedseqnum=0 rcv_base=86 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 10.846588 receive      data frame arrived
+ 10.846588 buffer       seq=6; rcv_base=6
+ 10.846588 ack send     individual ack=6; base=84 nextseqnum=88 expectedseqnum=0 rcv_base=86 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 10.846588 deliver      application position=86
+ 10.846588 window       base=84 nextseqnum=88 expectedseqnum=0 rcv_base=87 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 10.850588 receive      data frame arrived
+ 10.850588 buffer       seq=7; rcv_base=7
+ 10.850588 ack send     individual ack=7; base=84 nextseqnum=88 expectedseqnum=0 rcv_base=87 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 10.850588 deliver      application position=87
+ 10.850588 window       base=84 nextseqnum=88 expectedseqnum=0 rcv_base=88 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+ 11.088616 ack receive  ack frame arrived
+ 11.088616 window       base=85 nextseqnum=88 expectedseqnum=0 rcv_base=88 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 11.088616 send         data id=88 seq=0; base=85 nextseqnum=89 expectedseqnum=0 rcv_base=88 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 11.092616 ack receive  ack frame arrived
+ 11.092616 window       base=86 nextseqnum=89 expectedseqnum=0 rcv_base=88 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 11.092616 send         data id=89 seq=1; base=86 nextseqnum=90 expectedseqnum=0 rcv_base=88 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 11.096616 ack receive  ack frame arrived
+ 11.096616 window       base=87 nextseqnum=90 expectedseqnum=0 rcv_base=88 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 11.096616 send         data id=90 seq=2; base=87 nextseqnum=91 expectedseqnum=0 rcv_base=88 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 11.100616 ack receive  ack frame arrived
+ 11.100616 window       base=88 nextseqnum=91 expectedseqnum=0 rcv_base=88 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 11.100616 send         data id=91 seq=3; base=88 nextseqnum=92 expectedseqnum=0 rcv_base=88 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 11.342616 receive      data frame arrived
+ 11.342616 buffer       seq=0; rcv_base=0
+ 11.342616 ack send     individual ack=0; base=88 nextseqnum=92 expectedseqnum=0 rcv_base=88 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 11.342616 deliver      application position=88
+ 11.342616 window       base=88 nextseqnum=92 expectedseqnum=0 rcv_base=89 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 11.346616 receive      data frame arrived
+ 11.346616 buffer       seq=1; rcv_base=1
+ 11.346616 ack send     individual ack=1; base=88 nextseqnum=92 expectedseqnum=0 rcv_base=89 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 11.346616 deliver      application position=89
+ 11.346616 window       base=88 nextseqnum=92 expectedseqnum=0 rcv_base=90 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 11.350616 receive      data frame arrived
+ 11.350616 buffer       seq=2; rcv_base=2
+ 11.350616 ack send     individual ack=2; base=88 nextseqnum=92 expectedseqnum=0 rcv_base=90 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 11.350616 deliver      application position=90
+ 11.350616 window       base=88 nextseqnum=92 expectedseqnum=0 rcv_base=91 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 11.354616 receive      data frame arrived
+ 11.354616 buffer       seq=3; rcv_base=3
+ 11.354616 ack send     individual ack=3; base=88 nextseqnum=92 expectedseqnum=0 rcv_base=91 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 11.354616 deliver      application position=91
+ 11.354616 window       base=88 nextseqnum=92 expectedseqnum=0 rcv_base=92 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+ 11.592644 ack receive  ack frame arrived
+ 11.592644 window       base=89 nextseqnum=92 expectedseqnum=0 rcv_base=92 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 11.592644 send         data id=92 seq=4; base=89 nextseqnum=93 expectedseqnum=0 rcv_base=92 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 11.596644 ack receive  ack frame arrived
+ 11.596644 window       base=90 nextseqnum=93 expectedseqnum=0 rcv_base=92 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 11.596644 send         data id=93 seq=5; base=90 nextseqnum=94 expectedseqnum=0 rcv_base=92 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 11.600644 ack receive  ack frame arrived
+ 11.600644 window       base=91 nextseqnum=94 expectedseqnum=0 rcv_base=92 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 11.600644 send         data id=94 seq=6; base=91 nextseqnum=95 expectedseqnum=0 rcv_base=92 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 11.604644 ack receive  ack frame arrived
+ 11.604644 window       base=92 nextseqnum=95 expectedseqnum=0 rcv_base=92 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 11.604644 send         data id=95 seq=7; base=92 nextseqnum=96 expectedseqnum=0 rcv_base=92 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 11.846644 receive      data frame arrived
+ 11.846644 buffer       seq=4; rcv_base=4
+ 11.846644 ack send     individual ack=4; base=92 nextseqnum=96 expectedseqnum=0 rcv_base=92 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 11.846644 deliver      application position=92
+ 11.846644 window       base=92 nextseqnum=96 expectedseqnum=0 rcv_base=93 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 11.850644 receive      data frame arrived
+ 11.850644 buffer       seq=5; rcv_base=5
+ 11.850644 ack send     individual ack=5; base=92 nextseqnum=96 expectedseqnum=0 rcv_base=93 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 11.850644 deliver      application position=93
+ 11.850644 window       base=92 nextseqnum=96 expectedseqnum=0 rcv_base=94 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 11.854644 receive      data frame arrived
+ 11.854644 buffer       seq=6; rcv_base=6
+ 11.854644 ack send     individual ack=6; base=92 nextseqnum=96 expectedseqnum=0 rcv_base=94 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 11.854644 deliver      application position=94
+ 11.854644 window       base=92 nextseqnum=96 expectedseqnum=0 rcv_base=95 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 11.858644 receive      data frame arrived
+ 11.858644 buffer       seq=7; rcv_base=7
+ 11.858644 ack send     individual ack=7; base=92 nextseqnum=96 expectedseqnum=0 rcv_base=95 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 11.858644 deliver      application position=95
+ 11.858644 window       base=92 nextseqnum=96 expectedseqnum=0 rcv_base=96 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+ 12.096672 ack receive  ack frame arrived
+ 12.096672 window       base=93 nextseqnum=96 expectedseqnum=0 rcv_base=96 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 12.096672 send         data id=96 seq=0; base=93 nextseqnum=97 expectedseqnum=0 rcv_base=96 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 12.100672 ack receive  ack frame arrived
+ 12.100672 window       base=94 nextseqnum=97 expectedseqnum=0 rcv_base=96 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 12.100672 send         data id=97 seq=1; base=94 nextseqnum=98 expectedseqnum=0 rcv_base=96 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 12.104672 ack receive  ack frame arrived
+ 12.104672 window       base=95 nextseqnum=98 expectedseqnum=0 rcv_base=96 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 12.104672 send         data id=98 seq=2; base=95 nextseqnum=99 expectedseqnum=0 rcv_base=96 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 12.108672 ack receive  ack frame arrived
+ 12.108672 window       base=96 nextseqnum=99 expectedseqnum=0 rcv_base=96 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 12.108672 send         data id=99 seq=3; base=96 nextseqnum=100 expectedseqnum=0 rcv_base=96 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 12.350672 receive      data frame arrived
+ 12.350672 buffer       seq=0; rcv_base=0
+ 12.350672 ack send     individual ack=0; base=96 nextseqnum=100 expectedseqnum=0 rcv_base=96 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 12.350672 deliver      application position=96
+ 12.350672 window       base=96 nextseqnum=100 expectedseqnum=0 rcv_base=97 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 12.354672 receive      data frame arrived
+ 12.354672 buffer       seq=1; rcv_base=1
+ 12.354672 ack send     individual ack=1; base=96 nextseqnum=100 expectedseqnum=0 rcv_base=97 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 12.354672 deliver      application position=97
+ 12.354672 window       base=96 nextseqnum=100 expectedseqnum=0 rcv_base=98 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 12.358672 receive      data frame arrived
+ 12.358672 buffer       seq=2; rcv_base=2
+ 12.358672 ack send     individual ack=2; base=96 nextseqnum=100 expectedseqnum=0 rcv_base=98 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 12.358672 deliver      application position=98
+ 12.358672 window       base=96 nextseqnum=100 expectedseqnum=0 rcv_base=99 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 12.362672 receive      data frame arrived
+ 12.362672 buffer       seq=3; rcv_base=3
+ 12.362672 ack send     individual ack=3; base=96 nextseqnum=100 expectedseqnum=0 rcv_base=99 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 12.362672 deliver      application position=99
+ 12.362672 window       base=96 nextseqnum=100 expectedseqnum=0 rcv_base=100 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+ 12.600700 ack receive  ack frame arrived
+ 12.600700 window       base=97 nextseqnum=100 expectedseqnum=0 rcv_base=100 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 12.600700 send         data id=100 seq=4; base=97 nextseqnum=101 expectedseqnum=0 rcv_base=100 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 12.604700 ack receive  ack frame arrived
+ 12.604700 window       base=98 nextseqnum=101 expectedseqnum=0 rcv_base=100 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 12.604700 send         data id=101 seq=5; base=98 nextseqnum=102 expectedseqnum=0 rcv_base=100 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 12.608700 ack receive  ack frame arrived
+ 12.608700 window       base=99 nextseqnum=102 expectedseqnum=0 rcv_base=100 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 12.608700 send         data id=102 seq=6; base=99 nextseqnum=103 expectedseqnum=0 rcv_base=100 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 12.612700 ack receive  ack frame arrived
+ 12.612700 window       base=100 nextseqnum=103 expectedseqnum=0 rcv_base=100 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 12.612700 send         data id=103 seq=7; base=100 nextseqnum=104 expectedseqnum=0 rcv_base=100 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 12.854700 receive      data frame arrived
+ 12.854700 buffer       seq=4; rcv_base=4
+ 12.854700 ack send     individual ack=4; base=100 nextseqnum=104 expectedseqnum=0 rcv_base=100 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 12.854700 deliver      application position=100
+ 12.854700 window       base=100 nextseqnum=104 expectedseqnum=0 rcv_base=101 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 12.858700 receive      data frame arrived
+ 12.858700 buffer       seq=5; rcv_base=5
+ 12.858700 ack send     individual ack=5; base=100 nextseqnum=104 expectedseqnum=0 rcv_base=101 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 12.858700 deliver      application position=101
+ 12.858700 window       base=100 nextseqnum=104 expectedseqnum=0 rcv_base=102 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 12.862700 receive      data frame arrived
+ 12.862700 buffer       seq=6; rcv_base=6
+ 12.862700 ack send     individual ack=6; base=100 nextseqnum=104 expectedseqnum=0 rcv_base=102 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 12.862700 deliver      application position=102
+ 12.862700 window       base=100 nextseqnum=104 expectedseqnum=0 rcv_base=103 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 12.866700 receive      data frame arrived
+ 12.866700 buffer       seq=7; rcv_base=7
+ 12.866700 ack send     individual ack=7; base=100 nextseqnum=104 expectedseqnum=0 rcv_base=103 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 12.866700 deliver      application position=103
+ 12.866700 window       base=100 nextseqnum=104 expectedseqnum=0 rcv_base=104 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+ 13.104728 ack receive  ack frame arrived
+ 13.104728 window       base=101 nextseqnum=104 expectedseqnum=0 rcv_base=104 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 13.104728 send         data id=104 seq=0; base=101 nextseqnum=105 expectedseqnum=0 rcv_base=104 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 13.108728 ack receive  ack frame arrived
+ 13.108728 window       base=102 nextseqnum=105 expectedseqnum=0 rcv_base=104 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 13.108728 send         data id=105 seq=1; base=102 nextseqnum=106 expectedseqnum=0 rcv_base=104 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 13.112728 ack receive  ack frame arrived
+ 13.112728 window       base=103 nextseqnum=106 expectedseqnum=0 rcv_base=104 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 13.112728 send         data id=106 seq=2; base=103 nextseqnum=107 expectedseqnum=0 rcv_base=104 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 13.116728 ack receive  ack frame arrived
+ 13.116728 window       base=104 nextseqnum=107 expectedseqnum=0 rcv_base=104 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 13.116728 send         data id=107 seq=3; base=104 nextseqnum=108 expectedseqnum=0 rcv_base=104 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 13.358728 receive      data frame arrived
+ 13.358728 buffer       seq=0; rcv_base=0
+ 13.358728 ack send     individual ack=0; base=104 nextseqnum=108 expectedseqnum=0 rcv_base=104 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 13.358728 deliver      application position=104
+ 13.358728 window       base=104 nextseqnum=108 expectedseqnum=0 rcv_base=105 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 13.362728 receive      data frame arrived
+ 13.362728 buffer       seq=1; rcv_base=1
+ 13.362728 ack send     individual ack=1; base=104 nextseqnum=108 expectedseqnum=0 rcv_base=105 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 13.362728 deliver      application position=105
+ 13.362728 window       base=104 nextseqnum=108 expectedseqnum=0 rcv_base=106 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 13.366728 receive      data frame arrived
+ 13.366728 buffer       seq=2; rcv_base=2
+ 13.366728 ack send     individual ack=2; base=104 nextseqnum=108 expectedseqnum=0 rcv_base=106 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 13.366728 deliver      application position=106
+ 13.366728 window       base=104 nextseqnum=108 expectedseqnum=0 rcv_base=107 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 13.370728 receive      data frame arrived
+ 13.370728 buffer       seq=3; rcv_base=3
+ 13.370728 ack send     individual ack=3; base=104 nextseqnum=108 expectedseqnum=0 rcv_base=107 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 13.370728 deliver      application position=107
+ 13.370728 window       base=104 nextseqnum=108 expectedseqnum=0 rcv_base=108 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+ 13.608756 ack receive  ack frame arrived
+ 13.608756 window       base=105 nextseqnum=108 expectedseqnum=0 rcv_base=108 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 13.608756 send         data id=108 seq=4; base=105 nextseqnum=109 expectedseqnum=0 rcv_base=108 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 13.612756 ack receive  ack frame arrived
+ 13.612756 window       base=106 nextseqnum=109 expectedseqnum=0 rcv_base=108 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 13.612756 send         data id=109 seq=5; base=106 nextseqnum=110 expectedseqnum=0 rcv_base=108 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 13.616756 ack receive  ack frame arrived
+ 13.616756 window       base=107 nextseqnum=110 expectedseqnum=0 rcv_base=108 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 13.616756 send         data id=110 seq=6; base=107 nextseqnum=111 expectedseqnum=0 rcv_base=108 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 13.620756 ack receive  ack frame arrived
+ 13.620756 window       base=108 nextseqnum=111 expectedseqnum=0 rcv_base=108 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 13.620756 send         data id=111 seq=7; base=108 nextseqnum=112 expectedseqnum=0 rcv_base=108 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 13.862756 receive      data frame arrived
+ 13.862756 buffer       seq=4; rcv_base=4
+ 13.862756 ack send     individual ack=4; base=108 nextseqnum=112 expectedseqnum=0 rcv_base=108 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 13.862756 deliver      application position=108
+ 13.862756 window       base=108 nextseqnum=112 expectedseqnum=0 rcv_base=109 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 13.866756 receive      data frame arrived
+ 13.866756 buffer       seq=5; rcv_base=5
+ 13.866756 ack send     individual ack=5; base=108 nextseqnum=112 expectedseqnum=0 rcv_base=109 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 13.866756 deliver      application position=109
+ 13.866756 window       base=108 nextseqnum=112 expectedseqnum=0 rcv_base=110 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 13.870756 receive      data frame arrived
+ 13.870756 buffer       seq=6; rcv_base=6
+ 13.870756 ack send     individual ack=6; base=108 nextseqnum=112 expectedseqnum=0 rcv_base=110 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 13.870756 deliver      application position=110
+ 13.870756 window       base=108 nextseqnum=112 expectedseqnum=0 rcv_base=111 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 13.874756 receive      data frame arrived
+ 13.874756 buffer       seq=7; rcv_base=7
+ 13.874756 ack send     individual ack=7; base=108 nextseqnum=112 expectedseqnum=0 rcv_base=111 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 13.874756 deliver      application position=111
+ 13.874756 window       base=108 nextseqnum=112 expectedseqnum=0 rcv_base=112 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+ 14.112784 ack receive  ack frame arrived
+ 14.112784 window       base=109 nextseqnum=112 expectedseqnum=0 rcv_base=112 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 14.112784 send         data id=112 seq=0; base=109 nextseqnum=113 expectedseqnum=0 rcv_base=112 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 14.116784 ack receive  ack frame arrived
+ 14.116784 window       base=110 nextseqnum=113 expectedseqnum=0 rcv_base=112 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 14.116784 send         data id=113 seq=1; base=110 nextseqnum=114 expectedseqnum=0 rcv_base=112 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 14.120784 ack receive  ack frame arrived
+ 14.120784 window       base=111 nextseqnum=114 expectedseqnum=0 rcv_base=112 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 14.120784 send         data id=114 seq=2; base=111 nextseqnum=115 expectedseqnum=0 rcv_base=112 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 14.124784 ack receive  ack frame arrived
+ 14.124784 window       base=112 nextseqnum=115 expectedseqnum=0 rcv_base=112 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 14.124784 send         data id=115 seq=3; base=112 nextseqnum=116 expectedseqnum=0 rcv_base=112 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 14.366784 receive      data frame arrived
+ 14.366784 buffer       seq=0; rcv_base=0
+ 14.366784 ack send     individual ack=0; base=112 nextseqnum=116 expectedseqnum=0 rcv_base=112 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 14.366784 deliver      application position=112
+ 14.366784 window       base=112 nextseqnum=116 expectedseqnum=0 rcv_base=113 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 14.370784 receive      data frame arrived
+ 14.370784 buffer       seq=1; rcv_base=1
+ 14.370784 ack send     individual ack=1; base=112 nextseqnum=116 expectedseqnum=0 rcv_base=113 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 14.370784 deliver      application position=113
+ 14.370784 window       base=112 nextseqnum=116 expectedseqnum=0 rcv_base=114 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 14.374784 receive      data frame arrived
+ 14.374784 buffer       seq=2; rcv_base=2
+ 14.374784 ack send     individual ack=2; base=112 nextseqnum=116 expectedseqnum=0 rcv_base=114 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 14.374784 deliver      application position=114
+ 14.374784 window       base=112 nextseqnum=116 expectedseqnum=0 rcv_base=115 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 14.378784 receive      data frame arrived
+ 14.378784 buffer       seq=3; rcv_base=3
+ 14.378784 ack send     individual ack=3; base=112 nextseqnum=116 expectedseqnum=0 rcv_base=115 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 14.378784 deliver      application position=115
+ 14.378784 window       base=112 nextseqnum=116 expectedseqnum=0 rcv_base=116 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+ 14.616812 ack receive  ack frame arrived
+ 14.616812 window       base=113 nextseqnum=116 expectedseqnum=0 rcv_base=116 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 14.616812 send         data id=116 seq=4; base=113 nextseqnum=117 expectedseqnum=0 rcv_base=116 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 14.620812 ack receive  ack frame arrived
+ 14.620812 window       base=114 nextseqnum=117 expectedseqnum=0 rcv_base=116 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 14.620812 send         data id=117 seq=5; base=114 nextseqnum=118 expectedseqnum=0 rcv_base=116 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 14.624812 ack receive  ack frame arrived
+ 14.624812 window       base=115 nextseqnum=118 expectedseqnum=0 rcv_base=116 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 14.624812 send         data id=118 seq=6; base=115 nextseqnum=119 expectedseqnum=0 rcv_base=116 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 14.628812 ack receive  ack frame arrived
+ 14.628812 window       base=116 nextseqnum=119 expectedseqnum=0 rcv_base=116 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 14.628812 send         data id=119 seq=7; base=116 nextseqnum=120 expectedseqnum=0 rcv_base=116 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 14.870812 receive      data frame arrived
+ 14.870812 buffer       seq=4; rcv_base=4
+ 14.870812 ack send     individual ack=4; base=116 nextseqnum=120 expectedseqnum=0 rcv_base=116 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 14.870812 deliver      application position=116
+ 14.870812 window       base=116 nextseqnum=120 expectedseqnum=0 rcv_base=117 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 14.874812 receive      data frame arrived
+ 14.874812 buffer       seq=5; rcv_base=5
+ 14.874812 ack send     individual ack=5; base=116 nextseqnum=120 expectedseqnum=0 rcv_base=117 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 14.874812 deliver      application position=117
+ 14.874812 window       base=116 nextseqnum=120 expectedseqnum=0 rcv_base=118 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 14.878812 receive      data frame arrived
+ 14.878812 buffer       seq=6; rcv_base=6
+ 14.878812 ack send     individual ack=6; base=116 nextseqnum=120 expectedseqnum=0 rcv_base=118 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 14.878812 deliver      application position=118
+ 14.878812 window       base=116 nextseqnum=120 expectedseqnum=0 rcv_base=119 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 14.882812 receive      data frame arrived
+ 14.882812 buffer       seq=7; rcv_base=7
+ 14.882812 ack send     individual ack=7; base=116 nextseqnum=120 expectedseqnum=0 rcv_base=119 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 14.882812 deliver      application position=119
+ 14.882812 window       base=116 nextseqnum=120 expectedseqnum=0 rcv_base=120 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+ 15.120840 ack receive  ack frame arrived
+ 15.120840 window       base=117 nextseqnum=120 expectedseqnum=0 rcv_base=120 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 15.120840 send         data id=120 seq=0; base=117 nextseqnum=121 expectedseqnum=0 rcv_base=120 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 15.124840 ack receive  ack frame arrived
+ 15.124840 window       base=118 nextseqnum=121 expectedseqnum=0 rcv_base=120 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 15.124840 send         data id=121 seq=1; base=118 nextseqnum=122 expectedseqnum=0 rcv_base=120 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 15.128840 ack receive  ack frame arrived
+ 15.128840 window       base=119 nextseqnum=122 expectedseqnum=0 rcv_base=120 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 15.128840 send         data id=122 seq=2; base=119 nextseqnum=123 expectedseqnum=0 rcv_base=120 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 15.132840 ack receive  ack frame arrived
+ 15.132840 window       base=120 nextseqnum=123 expectedseqnum=0 rcv_base=120 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 15.132840 send         data id=123 seq=3; base=120 nextseqnum=124 expectedseqnum=0 rcv_base=120 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 15.374840 receive      data frame arrived
+ 15.374840 buffer       seq=0; rcv_base=0
+ 15.374840 ack send     individual ack=0; base=120 nextseqnum=124 expectedseqnum=0 rcv_base=120 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 15.374840 deliver      application position=120
+ 15.374840 window       base=120 nextseqnum=124 expectedseqnum=0 rcv_base=121 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 15.378840 receive      data frame arrived
+ 15.378840 buffer       seq=1; rcv_base=1
+ 15.378840 ack send     individual ack=1; base=120 nextseqnum=124 expectedseqnum=0 rcv_base=121 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 15.378840 deliver      application position=121
+ 15.378840 window       base=120 nextseqnum=124 expectedseqnum=0 rcv_base=122 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 15.382840 receive      data frame arrived
+ 15.382840 buffer       seq=2; rcv_base=2
+ 15.382840 ack send     individual ack=2; base=120 nextseqnum=124 expectedseqnum=0 rcv_base=122 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 15.382840 deliver      application position=122
+ 15.382840 window       base=120 nextseqnum=124 expectedseqnum=0 rcv_base=123 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 15.386840 receive      data frame arrived
+ 15.386840 buffer       seq=3; rcv_base=3
+ 15.386840 ack send     individual ack=3; base=120 nextseqnum=124 expectedseqnum=0 rcv_base=123 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 15.386840 deliver      application position=123
+ 15.386840 window       base=120 nextseqnum=124 expectedseqnum=0 rcv_base=124 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+ 15.624868 ack receive  ack frame arrived
+ 15.624868 window       base=121 nextseqnum=124 expectedseqnum=0 rcv_base=124 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 15.624868 send         data id=124 seq=4; base=121 nextseqnum=125 expectedseqnum=0 rcv_base=124 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 15.628868 ack receive  ack frame arrived
+ 15.628868 window       base=122 nextseqnum=125 expectedseqnum=0 rcv_base=124 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 15.628868 send         data id=125 seq=5; base=122 nextseqnum=126 expectedseqnum=0 rcv_base=124 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 15.632868 ack receive  ack frame arrived
+ 15.632868 window       base=123 nextseqnum=126 expectedseqnum=0 rcv_base=124 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 15.632868 send         data id=126 seq=6; base=123 nextseqnum=127 expectedseqnum=0 rcv_base=124 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 15.636868 ack receive  ack frame arrived
+ 15.636868 window       base=124 nextseqnum=127 expectedseqnum=0 rcv_base=124 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 15.636868 send         data id=127 seq=7; base=124 nextseqnum=128 expectedseqnum=0 rcv_base=124 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 15.878868 receive      data frame arrived
+ 15.878868 buffer       seq=4; rcv_base=4
+ 15.878868 ack send     individual ack=4; base=124 nextseqnum=128 expectedseqnum=0 rcv_base=124 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 15.878868 deliver      application position=124
+ 15.878868 window       base=124 nextseqnum=128 expectedseqnum=0 rcv_base=125 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 15.882868 receive      data frame arrived
+ 15.882868 buffer       seq=5; rcv_base=5
+ 15.882868 ack send     individual ack=5; base=124 nextseqnum=128 expectedseqnum=0 rcv_base=125 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 15.882868 deliver      application position=125
+ 15.882868 window       base=124 nextseqnum=128 expectedseqnum=0 rcv_base=126 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 15.886868 receive      data frame arrived
+ 15.886868 buffer       seq=6; rcv_base=6
+ 15.886868 ack send     individual ack=6; base=124 nextseqnum=128 expectedseqnum=0 rcv_base=126 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 15.886868 deliver      application position=126
+ 15.886868 window       base=124 nextseqnum=128 expectedseqnum=0 rcv_base=127 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 15.890868 receive      data frame arrived
+ 15.890868 buffer       seq=7; rcv_base=7
+ 15.890868 ack send     individual ack=7; base=124 nextseqnum=128 expectedseqnum=0 rcv_base=127 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 15.890868 deliver      application position=127
+ 15.890868 window       base=124 nextseqnum=128 expectedseqnum=0 rcv_base=128 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+ 16.128896 ack receive  ack frame arrived
+ 16.128896 window       base=125 nextseqnum=128 expectedseqnum=0 rcv_base=128 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 16.128896 send         data id=128 seq=0; base=125 nextseqnum=129 expectedseqnum=0 rcv_base=128 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 16.132896 ack receive  ack frame arrived
+ 16.132896 window       base=126 nextseqnum=129 expectedseqnum=0 rcv_base=128 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 16.132896 send         data id=129 seq=1; base=126 nextseqnum=130 expectedseqnum=0 rcv_base=128 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 16.136896 ack receive  ack frame arrived
+ 16.136896 window       base=127 nextseqnum=130 expectedseqnum=0 rcv_base=128 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 16.136896 send         data id=130 seq=2; base=127 nextseqnum=131 expectedseqnum=0 rcv_base=128 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 16.140896 ack receive  ack frame arrived
+ 16.140896 window       base=128 nextseqnum=131 expectedseqnum=0 rcv_base=128 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 16.140896 send         data id=131 seq=3; base=128 nextseqnum=132 expectedseqnum=0 rcv_base=128 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 16.382896 receive      data frame arrived
+ 16.382896 buffer       seq=0; rcv_base=0
+ 16.382896 ack send     individual ack=0; base=128 nextseqnum=132 expectedseqnum=0 rcv_base=128 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 16.382896 deliver      application position=128
+ 16.382896 window       base=128 nextseqnum=132 expectedseqnum=0 rcv_base=129 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 16.386896 receive      data frame arrived
+ 16.386896 buffer       seq=1; rcv_base=1
+ 16.386896 ack send     individual ack=1; base=128 nextseqnum=132 expectedseqnum=0 rcv_base=129 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 16.386896 deliver      application position=129
+ 16.386896 window       base=128 nextseqnum=132 expectedseqnum=0 rcv_base=130 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 16.390896 receive      data frame arrived
+ 16.390896 buffer       seq=2; rcv_base=2
+ 16.390896 ack send     individual ack=2; base=128 nextseqnum=132 expectedseqnum=0 rcv_base=130 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 16.390896 deliver      application position=130
+ 16.390896 window       base=128 nextseqnum=132 expectedseqnum=0 rcv_base=131 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 16.394896 receive      data frame arrived
+ 16.394896 buffer       seq=3; rcv_base=3
+ 16.394896 ack send     individual ack=3; base=128 nextseqnum=132 expectedseqnum=0 rcv_base=131 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 16.394896 deliver      application position=131
+ 16.394896 window       base=128 nextseqnum=132 expectedseqnum=0 rcv_base=132 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+ 16.632924 ack receive  ack frame arrived
+ 16.632924 window       base=129 nextseqnum=132 expectedseqnum=0 rcv_base=132 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 16.632924 send         data id=132 seq=4; base=129 nextseqnum=133 expectedseqnum=0 rcv_base=132 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 16.636924 ack receive  ack frame arrived
+ 16.636924 window       base=130 nextseqnum=133 expectedseqnum=0 rcv_base=132 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 16.636924 send         data id=133 seq=5; base=130 nextseqnum=134 expectedseqnum=0 rcv_base=132 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 16.640924 ack receive  ack frame arrived
+ 16.640924 window       base=131 nextseqnum=134 expectedseqnum=0 rcv_base=132 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 16.640924 send         data id=134 seq=6; base=131 nextseqnum=135 expectedseqnum=0 rcv_base=132 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 16.644924 ack receive  ack frame arrived
+ 16.644924 window       base=132 nextseqnum=135 expectedseqnum=0 rcv_base=132 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 16.644924 send         data id=135 seq=7; base=132 nextseqnum=136 expectedseqnum=0 rcv_base=132 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 16.886924 receive      data frame arrived
+ 16.886924 buffer       seq=4; rcv_base=4
+ 16.886924 ack send     individual ack=4; base=132 nextseqnum=136 expectedseqnum=0 rcv_base=132 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 16.886924 deliver      application position=132
+ 16.886924 window       base=132 nextseqnum=136 expectedseqnum=0 rcv_base=133 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 16.890924 receive      data frame arrived
+ 16.890924 buffer       seq=5; rcv_base=5
+ 16.890924 ack send     individual ack=5; base=132 nextseqnum=136 expectedseqnum=0 rcv_base=133 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 16.890924 deliver      application position=133
+ 16.890924 window       base=132 nextseqnum=136 expectedseqnum=0 rcv_base=134 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 16.894924 receive      data frame arrived
+ 16.894924 buffer       seq=6; rcv_base=6
+ 16.894924 ack send     individual ack=6; base=132 nextseqnum=136 expectedseqnum=0 rcv_base=134 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 16.894924 deliver      application position=134
+ 16.894924 window       base=132 nextseqnum=136 expectedseqnum=0 rcv_base=135 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 16.898924 receive      data frame arrived
+ 16.898924 buffer       seq=7; rcv_base=7
+ 16.898924 ack send     individual ack=7; base=132 nextseqnum=136 expectedseqnum=0 rcv_base=135 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 16.898924 deliver      application position=135
+ 16.898924 window       base=132 nextseqnum=136 expectedseqnum=0 rcv_base=136 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+ 17.136952 ack receive  ack frame arrived
+ 17.136952 window       base=133 nextseqnum=136 expectedseqnum=0 rcv_base=136 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 17.136952 send         data id=136 seq=0; base=133 nextseqnum=137 expectedseqnum=0 rcv_base=136 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 17.140952 ack receive  ack frame arrived
+ 17.140952 window       base=134 nextseqnum=137 expectedseqnum=0 rcv_base=136 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 17.140952 send         data id=137 seq=1; base=134 nextseqnum=138 expectedseqnum=0 rcv_base=136 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 17.144952 ack receive  ack frame arrived
+ 17.144952 window       base=135 nextseqnum=138 expectedseqnum=0 rcv_base=136 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 17.144952 send         data id=138 seq=2; base=135 nextseqnum=139 expectedseqnum=0 rcv_base=136 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 17.148952 ack receive  ack frame arrived
+ 17.148952 window       base=136 nextseqnum=139 expectedseqnum=0 rcv_base=136 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 17.148952 send         data id=139 seq=3; base=136 nextseqnum=140 expectedseqnum=0 rcv_base=136 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 17.390952 receive      data frame arrived
+ 17.390952 buffer       seq=0; rcv_base=0
+ 17.390952 ack send     individual ack=0; base=136 nextseqnum=140 expectedseqnum=0 rcv_base=136 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 17.390952 deliver      application position=136
+ 17.390952 window       base=136 nextseqnum=140 expectedseqnum=0 rcv_base=137 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 17.394952 receive      data frame arrived
+ 17.394952 buffer       seq=1; rcv_base=1
+ 17.394952 ack send     individual ack=1; base=136 nextseqnum=140 expectedseqnum=0 rcv_base=137 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 17.394952 deliver      application position=137
+ 17.394952 window       base=136 nextseqnum=140 expectedseqnum=0 rcv_base=138 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 17.398952 receive      data frame arrived
+ 17.398952 buffer       seq=2; rcv_base=2
+ 17.398952 ack send     individual ack=2; base=136 nextseqnum=140 expectedseqnum=0 rcv_base=138 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 17.398952 deliver      application position=138
+ 17.398952 window       base=136 nextseqnum=140 expectedseqnum=0 rcv_base=139 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 17.402952 receive      data frame arrived
+ 17.402952 buffer       seq=3; rcv_base=3
+ 17.402952 ack send     individual ack=3; base=136 nextseqnum=140 expectedseqnum=0 rcv_base=139 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 17.402952 deliver      application position=139
+ 17.402952 window       base=136 nextseqnum=140 expectedseqnum=0 rcv_base=140 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+ 17.640980 ack receive  ack frame arrived
+ 17.640980 window       base=137 nextseqnum=140 expectedseqnum=0 rcv_base=140 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 17.640980 send         data id=140 seq=4; base=137 nextseqnum=141 expectedseqnum=0 rcv_base=140 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 17.644980 ack receive  ack frame arrived
+ 17.644980 window       base=138 nextseqnum=141 expectedseqnum=0 rcv_base=140 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 17.644980 send         data id=141 seq=5; base=138 nextseqnum=142 expectedseqnum=0 rcv_base=140 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 17.648980 ack receive  ack frame arrived
+ 17.648980 window       base=139 nextseqnum=142 expectedseqnum=0 rcv_base=140 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 17.648980 send         data id=142 seq=6; base=139 nextseqnum=143 expectedseqnum=0 rcv_base=140 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 17.652980 ack receive  ack frame arrived
+ 17.652980 window       base=140 nextseqnum=143 expectedseqnum=0 rcv_base=140 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 17.652980 send         data id=143 seq=7; base=140 nextseqnum=144 expectedseqnum=0 rcv_base=140 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 17.894980 receive      data frame arrived
+ 17.894980 buffer       seq=4; rcv_base=4
+ 17.894980 ack send     individual ack=4; base=140 nextseqnum=144 expectedseqnum=0 rcv_base=140 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 17.894980 deliver      application position=140
+ 17.894980 window       base=140 nextseqnum=144 expectedseqnum=0 rcv_base=141 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 17.898980 receive      data frame arrived
+ 17.898980 buffer       seq=5; rcv_base=5
+ 17.898980 ack send     individual ack=5; base=140 nextseqnum=144 expectedseqnum=0 rcv_base=141 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 17.898980 deliver      application position=141
+ 17.898980 window       base=140 nextseqnum=144 expectedseqnum=0 rcv_base=142 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 17.902980 receive      data frame arrived
+ 17.902980 buffer       seq=6; rcv_base=6
+ 17.902980 ack send     individual ack=6; base=140 nextseqnum=144 expectedseqnum=0 rcv_base=142 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 17.902980 deliver      application position=142
+ 17.902980 window       base=140 nextseqnum=144 expectedseqnum=0 rcv_base=143 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 17.906980 receive      data frame arrived
+ 17.906980 buffer       seq=7; rcv_base=7
+ 17.906980 ack send     individual ack=7; base=140 nextseqnum=144 expectedseqnum=0 rcv_base=143 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 17.906980 deliver      application position=143
+ 17.906980 window       base=140 nextseqnum=144 expectedseqnum=0 rcv_base=144 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+ 18.145008 ack receive  ack frame arrived
+ 18.145008 window       base=141 nextseqnum=144 expectedseqnum=0 rcv_base=144 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 18.145008 send         data id=144 seq=0; base=141 nextseqnum=145 expectedseqnum=0 rcv_base=144 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 18.149008 ack receive  ack frame arrived
+ 18.149008 window       base=142 nextseqnum=145 expectedseqnum=0 rcv_base=144 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 18.149008 send         data id=145 seq=1; base=142 nextseqnum=146 expectedseqnum=0 rcv_base=144 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 18.153008 ack receive  ack frame arrived
+ 18.153008 window       base=143 nextseqnum=146 expectedseqnum=0 rcv_base=144 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 18.153008 send         data id=146 seq=2; base=143 nextseqnum=147 expectedseqnum=0 rcv_base=144 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 18.157008 ack receive  ack frame arrived
+ 18.157008 window       base=144 nextseqnum=147 expectedseqnum=0 rcv_base=144 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 18.157008 send         data id=147 seq=3; base=144 nextseqnum=148 expectedseqnum=0 rcv_base=144 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 18.399008 receive      data frame arrived
+ 18.399008 buffer       seq=0; rcv_base=0
+ 18.399008 ack send     individual ack=0; base=144 nextseqnum=148 expectedseqnum=0 rcv_base=144 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 18.399008 deliver      application position=144
+ 18.399008 window       base=144 nextseqnum=148 expectedseqnum=0 rcv_base=145 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 18.403008 receive      data frame arrived
+ 18.403008 buffer       seq=1; rcv_base=1
+ 18.403008 ack send     individual ack=1; base=144 nextseqnum=148 expectedseqnum=0 rcv_base=145 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 18.403008 deliver      application position=145
+ 18.403008 window       base=144 nextseqnum=148 expectedseqnum=0 rcv_base=146 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 18.407008 receive      data frame arrived
+ 18.407008 buffer       seq=2; rcv_base=2
+ 18.407008 ack send     individual ack=2; base=144 nextseqnum=148 expectedseqnum=0 rcv_base=146 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 18.407008 deliver      application position=146
+ 18.407008 window       base=144 nextseqnum=148 expectedseqnum=0 rcv_base=147 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 18.411008 receive      data frame arrived
+ 18.411008 buffer       seq=3; rcv_base=3
+ 18.411008 ack send     individual ack=3; base=144 nextseqnum=148 expectedseqnum=0 rcv_base=147 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 18.411008 deliver      application position=147
+ 18.411008 window       base=144 nextseqnum=148 expectedseqnum=0 rcv_base=148 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+ 18.649036 ack receive  ack frame arrived
+ 18.649036 window       base=145 nextseqnum=148 expectedseqnum=0 rcv_base=148 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 18.649036 send         data id=148 seq=4; base=145 nextseqnum=149 expectedseqnum=0 rcv_base=148 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 18.653036 ack receive  ack frame arrived
+ 18.653036 window       base=146 nextseqnum=149 expectedseqnum=0 rcv_base=148 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 18.653036 send         data id=149 seq=5; base=146 nextseqnum=150 expectedseqnum=0 rcv_base=148 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 18.657036 ack receive  ack frame arrived
+ 18.657036 window       base=147 nextseqnum=150 expectedseqnum=0 rcv_base=148 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 18.657036 send         data id=150 seq=6; base=147 nextseqnum=151 expectedseqnum=0 rcv_base=148 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 18.661036 ack receive  ack frame arrived
+ 18.661036 window       base=148 nextseqnum=151 expectedseqnum=0 rcv_base=148 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 18.661036 send         data id=151 seq=7; base=148 nextseqnum=152 expectedseqnum=0 rcv_base=148 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 18.903036 receive      data frame arrived
+ 18.903036 buffer       seq=4; rcv_base=4
+ 18.903036 ack send     individual ack=4; base=148 nextseqnum=152 expectedseqnum=0 rcv_base=148 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 18.903036 deliver      application position=148
+ 18.903036 window       base=148 nextseqnum=152 expectedseqnum=0 rcv_base=149 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 18.907036 receive      data frame arrived
+ 18.907036 buffer       seq=5; rcv_base=5
+ 18.907036 ack send     individual ack=5; base=148 nextseqnum=152 expectedseqnum=0 rcv_base=149 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 18.907036 deliver      application position=149
+ 18.907036 window       base=148 nextseqnum=152 expectedseqnum=0 rcv_base=150 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 18.911036 receive      data frame arrived
+ 18.911036 buffer       seq=6; rcv_base=6
+ 18.911036 ack send     individual ack=6; base=148 nextseqnum=152 expectedseqnum=0 rcv_base=150 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 18.911036 deliver      application position=150
+ 18.911036 window       base=148 nextseqnum=152 expectedseqnum=0 rcv_base=151 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 18.915036 receive      data frame arrived
+ 18.915036 buffer       seq=7; rcv_base=7
+ 18.915036 ack send     individual ack=7; base=148 nextseqnum=152 expectedseqnum=0 rcv_base=151 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 18.915036 deliver      application position=151
+ 18.915036 window       base=148 nextseqnum=152 expectedseqnum=0 rcv_base=152 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+ 19.153064 ack receive  ack frame arrived
+ 19.153064 window       base=149 nextseqnum=152 expectedseqnum=0 rcv_base=152 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 19.153064 send         data id=152 seq=0; base=149 nextseqnum=153 expectedseqnum=0 rcv_base=152 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 19.157064 ack receive  ack frame arrived
+ 19.157064 window       base=150 nextseqnum=153 expectedseqnum=0 rcv_base=152 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 19.157064 send         data id=153 seq=1; base=150 nextseqnum=154 expectedseqnum=0 rcv_base=152 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 19.161064 ack receive  ack frame arrived
+ 19.161064 window       base=151 nextseqnum=154 expectedseqnum=0 rcv_base=152 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 19.161064 send         data id=154 seq=2; base=151 nextseqnum=155 expectedseqnum=0 rcv_base=152 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 19.165064 ack receive  ack frame arrived
+ 19.165064 window       base=152 nextseqnum=155 expectedseqnum=0 rcv_base=152 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 19.165064 send         data id=155 seq=3; base=152 nextseqnum=156 expectedseqnum=0 rcv_base=152 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 19.407064 receive      data frame arrived
+ 19.407064 buffer       seq=0; rcv_base=0
+ 19.407064 ack send     individual ack=0; base=152 nextseqnum=156 expectedseqnum=0 rcv_base=152 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 19.407064 deliver      application position=152
+ 19.407064 window       base=152 nextseqnum=156 expectedseqnum=0 rcv_base=153 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 19.411064 receive      data frame arrived
+ 19.411064 buffer       seq=1; rcv_base=1
+ 19.411064 ack send     individual ack=1; base=152 nextseqnum=156 expectedseqnum=0 rcv_base=153 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 19.411064 deliver      application position=153
+ 19.411064 window       base=152 nextseqnum=156 expectedseqnum=0 rcv_base=154 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 19.415064 receive      data frame arrived
+ 19.415064 buffer       seq=2; rcv_base=2
+ 19.415064 ack send     individual ack=2; base=152 nextseqnum=156 expectedseqnum=0 rcv_base=154 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 19.415064 deliver      application position=154
+ 19.415064 window       base=152 nextseqnum=156 expectedseqnum=0 rcv_base=155 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 19.419064 receive      data frame arrived
+ 19.419064 buffer       seq=3; rcv_base=3
+ 19.419064 ack send     individual ack=3; base=152 nextseqnum=156 expectedseqnum=0 rcv_base=155 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 19.419064 deliver      application position=155
+ 19.419064 window       base=152 nextseqnum=156 expectedseqnum=0 rcv_base=156 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+ 19.657092 ack receive  ack frame arrived
+ 19.657092 window       base=153 nextseqnum=156 expectedseqnum=0 rcv_base=156 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 19.657092 send         data id=156 seq=4; base=153 nextseqnum=157 expectedseqnum=0 rcv_base=156 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 19.661092 ack receive  ack frame arrived
+ 19.661092 window       base=154 nextseqnum=157 expectedseqnum=0 rcv_base=156 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 19.661092 send         data id=157 seq=5; base=154 nextseqnum=158 expectedseqnum=0 rcv_base=156 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 19.665092 ack receive  ack frame arrived
+ 19.665092 window       base=155 nextseqnum=158 expectedseqnum=0 rcv_base=156 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 19.665092 send         data id=158 seq=6; base=155 nextseqnum=159 expectedseqnum=0 rcv_base=156 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 19.669092 ack receive  ack frame arrived
+ 19.669092 window       base=156 nextseqnum=159 expectedseqnum=0 rcv_base=156 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 19.669092 send         data id=159 seq=7; base=156 nextseqnum=160 expectedseqnum=0 rcv_base=156 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 19.911092 receive      data frame arrived
+ 19.911092 buffer       seq=4; rcv_base=4
+ 19.911092 ack send     individual ack=4; base=156 nextseqnum=160 expectedseqnum=0 rcv_base=156 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 19.911092 deliver      application position=156
+ 19.911092 window       base=156 nextseqnum=160 expectedseqnum=0 rcv_base=157 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 19.915092 receive      data frame arrived
+ 19.915092 buffer       seq=5; rcv_base=5
+ 19.915092 ack send     individual ack=5; base=156 nextseqnum=160 expectedseqnum=0 rcv_base=157 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 19.915092 deliver      application position=157
+ 19.915092 window       base=156 nextseqnum=160 expectedseqnum=0 rcv_base=158 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 19.919092 receive      data frame arrived
+ 19.919092 buffer       seq=6; rcv_base=6
+ 19.919092 ack send     individual ack=6; base=156 nextseqnum=160 expectedseqnum=0 rcv_base=158 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 19.919092 deliver      application position=158
+ 19.919092 window       base=156 nextseqnum=160 expectedseqnum=0 rcv_base=159 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 19.923092 receive      data frame arrived
+ 19.923092 buffer       seq=7; rcv_base=7
+ 19.923092 ack send     individual ack=7; base=156 nextseqnum=160 expectedseqnum=0 rcv_base=159 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 19.923092 deliver      application position=159
+ 19.923092 window       base=156 nextseqnum=160 expectedseqnum=0 rcv_base=160 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+ 20.161120 ack receive  ack frame arrived
+ 20.161120 window       base=157 nextseqnum=160 expectedseqnum=0 rcv_base=160 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 20.161120 send         data id=160 seq=0; base=157 nextseqnum=161 expectedseqnum=0 rcv_base=160 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 20.165120 ack receive  ack frame arrived
+ 20.165120 window       base=158 nextseqnum=161 expectedseqnum=0 rcv_base=160 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 20.165120 send         data id=161 seq=1; base=158 nextseqnum=162 expectedseqnum=0 rcv_base=160 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 20.169120 ack receive  ack frame arrived
+ 20.169120 window       base=159 nextseqnum=162 expectedseqnum=0 rcv_base=160 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 20.169120 send         data id=162 seq=2; base=159 nextseqnum=163 expectedseqnum=0 rcv_base=160 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 20.173120 ack receive  ack frame arrived
+ 20.173120 window       base=160 nextseqnum=163 expectedseqnum=0 rcv_base=160 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 20.173120 send         data id=163 seq=3; base=160 nextseqnum=164 expectedseqnum=0 rcv_base=160 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 20.415120 receive      data frame arrived
+ 20.415120 buffer       seq=0; rcv_base=0
+ 20.415120 ack send     individual ack=0; base=160 nextseqnum=164 expectedseqnum=0 rcv_base=160 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 20.415120 deliver      application position=160
+ 20.415120 window       base=160 nextseqnum=164 expectedseqnum=0 rcv_base=161 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 20.419120 receive      data frame arrived
+ 20.419120 buffer       seq=1; rcv_base=1
+ 20.419120 ack send     individual ack=1; base=160 nextseqnum=164 expectedseqnum=0 rcv_base=161 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 20.419120 deliver      application position=161
+ 20.419120 window       base=160 nextseqnum=164 expectedseqnum=0 rcv_base=162 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 20.423120 receive      data frame arrived
+ 20.423120 buffer       seq=2; rcv_base=2
+ 20.423120 ack send     individual ack=2; base=160 nextseqnum=164 expectedseqnum=0 rcv_base=162 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 20.423120 deliver      application position=162
+ 20.423120 window       base=160 nextseqnum=164 expectedseqnum=0 rcv_base=163 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 20.427120 receive      data frame arrived
+ 20.427120 buffer       seq=3; rcv_base=3
+ 20.427120 ack send     individual ack=3; base=160 nextseqnum=164 expectedseqnum=0 rcv_base=163 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 20.427120 deliver      application position=163
+ 20.427120 window       base=160 nextseqnum=164 expectedseqnum=0 rcv_base=164 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+ 20.665148 ack receive  ack frame arrived
+ 20.665148 window       base=161 nextseqnum=164 expectedseqnum=0 rcv_base=164 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 20.665148 send         data id=164 seq=4; base=161 nextseqnum=165 expectedseqnum=0 rcv_base=164 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 20.669148 ack receive  ack frame arrived
+ 20.669148 window       base=162 nextseqnum=165 expectedseqnum=0 rcv_base=164 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 20.669148 send         data id=165 seq=5; base=162 nextseqnum=166 expectedseqnum=0 rcv_base=164 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 20.673148 ack receive  ack frame arrived
+ 20.673148 window       base=163 nextseqnum=166 expectedseqnum=0 rcv_base=164 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 20.673148 send         data id=166 seq=6; base=163 nextseqnum=167 expectedseqnum=0 rcv_base=164 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 20.677148 ack receive  ack frame arrived
+ 20.677148 window       base=164 nextseqnum=167 expectedseqnum=0 rcv_base=164 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 20.677148 send         data id=167 seq=7; base=164 nextseqnum=168 expectedseqnum=0 rcv_base=164 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 20.919148 receive      data frame arrived
+ 20.919148 buffer       seq=4; rcv_base=4
+ 20.919148 ack send     individual ack=4; base=164 nextseqnum=168 expectedseqnum=0 rcv_base=164 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 20.919148 deliver      application position=164
+ 20.919148 window       base=164 nextseqnum=168 expectedseqnum=0 rcv_base=165 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 20.923148 receive      data frame arrived
+ 20.923148 buffer       seq=5; rcv_base=5
+ 20.923148 ack send     individual ack=5; base=164 nextseqnum=168 expectedseqnum=0 rcv_base=165 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 20.923148 deliver      application position=165
+ 20.923148 window       base=164 nextseqnum=168 expectedseqnum=0 rcv_base=166 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 20.927148 receive      data frame arrived
+ 20.927148 buffer       seq=6; rcv_base=6
+ 20.927148 ack send     individual ack=6; base=164 nextseqnum=168 expectedseqnum=0 rcv_base=166 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 20.927148 deliver      application position=166
+ 20.927148 window       base=164 nextseqnum=168 expectedseqnum=0 rcv_base=167 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 20.931148 receive      data frame arrived
+ 20.931148 buffer       seq=7; rcv_base=7
+ 20.931148 ack send     individual ack=7; base=164 nextseqnum=168 expectedseqnum=0 rcv_base=167 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 20.931148 deliver      application position=167
+ 20.931148 window       base=164 nextseqnum=168 expectedseqnum=0 rcv_base=168 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+ 21.169176 ack receive  ack frame arrived
+ 21.169176 window       base=165 nextseqnum=168 expectedseqnum=0 rcv_base=168 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 21.169176 send         data id=168 seq=0; base=165 nextseqnum=169 expectedseqnum=0 rcv_base=168 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 21.173176 ack receive  ack frame arrived
+ 21.173176 window       base=166 nextseqnum=169 expectedseqnum=0 rcv_base=168 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 21.173176 send         data id=169 seq=1; base=166 nextseqnum=170 expectedseqnum=0 rcv_base=168 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 21.177176 ack receive  ack frame arrived
+ 21.177176 window       base=167 nextseqnum=170 expectedseqnum=0 rcv_base=168 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 21.177176 send         data id=170 seq=2; base=167 nextseqnum=171 expectedseqnum=0 rcv_base=168 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 21.181176 ack receive  ack frame arrived
+ 21.181176 window       base=168 nextseqnum=171 expectedseqnum=0 rcv_base=168 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 21.181176 send         data id=171 seq=3; base=168 nextseqnum=172 expectedseqnum=0 rcv_base=168 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 21.423176 receive      data frame arrived
+ 21.423176 buffer       seq=0; rcv_base=0
+ 21.423176 ack send     individual ack=0; base=168 nextseqnum=172 expectedseqnum=0 rcv_base=168 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 21.423176 deliver      application position=168
+ 21.423176 window       base=168 nextseqnum=172 expectedseqnum=0 rcv_base=169 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 21.427176 receive      data frame arrived
+ 21.427176 buffer       seq=1; rcv_base=1
+ 21.427176 ack send     individual ack=1; base=168 nextseqnum=172 expectedseqnum=0 rcv_base=169 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 21.427176 deliver      application position=169
+ 21.427176 window       base=168 nextseqnum=172 expectedseqnum=0 rcv_base=170 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 21.431176 receive      data frame arrived
+ 21.431176 buffer       seq=2; rcv_base=2
+ 21.431176 ack send     individual ack=2; base=168 nextseqnum=172 expectedseqnum=0 rcv_base=170 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 21.431176 deliver      application position=170
+ 21.431176 window       base=168 nextseqnum=172 expectedseqnum=0 rcv_base=171 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 21.435176 receive      data frame arrived
+ 21.435176 buffer       seq=3; rcv_base=3
+ 21.435176 ack send     individual ack=3; base=168 nextseqnum=172 expectedseqnum=0 rcv_base=171 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 21.435176 deliver      application position=171
+ 21.435176 window       base=168 nextseqnum=172 expectedseqnum=0 rcv_base=172 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+ 21.673204 ack receive  ack frame arrived
+ 21.673204 window       base=169 nextseqnum=172 expectedseqnum=0 rcv_base=172 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 21.673204 send         data id=172 seq=4; base=169 nextseqnum=173 expectedseqnum=0 rcv_base=172 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 21.677204 ack receive  ack frame arrived
+ 21.677204 window       base=170 nextseqnum=173 expectedseqnum=0 rcv_base=172 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 21.677204 send         data id=173 seq=5; base=170 nextseqnum=174 expectedseqnum=0 rcv_base=172 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 21.681204 ack receive  ack frame arrived
+ 21.681204 window       base=171 nextseqnum=174 expectedseqnum=0 rcv_base=172 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 21.681204 send         data id=174 seq=6; base=171 nextseqnum=175 expectedseqnum=0 rcv_base=172 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 21.685204 ack receive  ack frame arrived
+ 21.685204 window       base=172 nextseqnum=175 expectedseqnum=0 rcv_base=172 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 21.685204 send         data id=175 seq=7; base=172 nextseqnum=176 expectedseqnum=0 rcv_base=172 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 21.927204 receive      data frame arrived
+ 21.927204 buffer       seq=4; rcv_base=4
+ 21.927204 ack send     individual ack=4; base=172 nextseqnum=176 expectedseqnum=0 rcv_base=172 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 21.927204 deliver      application position=172
+ 21.927204 window       base=172 nextseqnum=176 expectedseqnum=0 rcv_base=173 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 21.931204 receive      data frame arrived
+ 21.931204 buffer       seq=5; rcv_base=5
+ 21.931204 ack send     individual ack=5; base=172 nextseqnum=176 expectedseqnum=0 rcv_base=173 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 21.931204 deliver      application position=173
+ 21.931204 window       base=172 nextseqnum=176 expectedseqnum=0 rcv_base=174 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 21.935204 receive      data frame arrived
+ 21.935204 buffer       seq=6; rcv_base=6
+ 21.935204 ack send     individual ack=6; base=172 nextseqnum=176 expectedseqnum=0 rcv_base=174 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 21.935204 deliver      application position=174
+ 21.935204 window       base=172 nextseqnum=176 expectedseqnum=0 rcv_base=175 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 21.939204 receive      data frame arrived
+ 21.939204 buffer       seq=7; rcv_base=7
+ 21.939204 ack send     individual ack=7; base=172 nextseqnum=176 expectedseqnum=0 rcv_base=175 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 21.939204 deliver      application position=175
+ 21.939204 window       base=172 nextseqnum=176 expectedseqnum=0 rcv_base=176 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+ 22.177232 ack receive  ack frame arrived
+ 22.177232 window       base=173 nextseqnum=176 expectedseqnum=0 rcv_base=176 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 22.177232 send         data id=176 seq=0; base=173 nextseqnum=177 expectedseqnum=0 rcv_base=176 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 22.181232 ack receive  ack frame arrived
+ 22.181232 window       base=174 nextseqnum=177 expectedseqnum=0 rcv_base=176 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 22.181232 send         data id=177 seq=1; base=174 nextseqnum=178 expectedseqnum=0 rcv_base=176 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 22.185232 ack receive  ack frame arrived
+ 22.185232 window       base=175 nextseqnum=178 expectedseqnum=0 rcv_base=176 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 22.185232 send         data id=178 seq=2; base=175 nextseqnum=179 expectedseqnum=0 rcv_base=176 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 22.189232 ack receive  ack frame arrived
+ 22.189232 window       base=176 nextseqnum=179 expectedseqnum=0 rcv_base=176 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 22.189232 send         data id=179 seq=3; base=176 nextseqnum=180 expectedseqnum=0 rcv_base=176 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 22.431232 receive      data frame arrived
+ 22.431232 buffer       seq=0; rcv_base=0
+ 22.431232 ack send     individual ack=0; base=176 nextseqnum=180 expectedseqnum=0 rcv_base=176 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 22.431232 deliver      application position=176
+ 22.431232 window       base=176 nextseqnum=180 expectedseqnum=0 rcv_base=177 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 22.435232 receive      data frame arrived
+ 22.435232 buffer       seq=1; rcv_base=1
+ 22.435232 ack send     individual ack=1; base=176 nextseqnum=180 expectedseqnum=0 rcv_base=177 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 22.435232 deliver      application position=177
+ 22.435232 window       base=176 nextseqnum=180 expectedseqnum=0 rcv_base=178 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 22.439232 receive      data frame arrived
+ 22.439232 buffer       seq=2; rcv_base=2
+ 22.439232 ack send     individual ack=2; base=176 nextseqnum=180 expectedseqnum=0 rcv_base=178 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 22.439232 deliver      application position=178
+ 22.439232 window       base=176 nextseqnum=180 expectedseqnum=0 rcv_base=179 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 22.443232 receive      data frame arrived
+ 22.443232 buffer       seq=3; rcv_base=3
+ 22.443232 ack send     individual ack=3; base=176 nextseqnum=180 expectedseqnum=0 rcv_base=179 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 22.443232 deliver      application position=179
+ 22.443232 window       base=176 nextseqnum=180 expectedseqnum=0 rcv_base=180 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+ 22.681260 ack receive  ack frame arrived
+ 22.681260 window       base=177 nextseqnum=180 expectedseqnum=0 rcv_base=180 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 22.681260 send         data id=180 seq=4; base=177 nextseqnum=181 expectedseqnum=0 rcv_base=180 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 22.685260 ack receive  ack frame arrived
+ 22.685260 window       base=178 nextseqnum=181 expectedseqnum=0 rcv_base=180 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 22.685260 send         data id=181 seq=5; base=178 nextseqnum=182 expectedseqnum=0 rcv_base=180 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 22.689260 ack receive  ack frame arrived
+ 22.689260 window       base=179 nextseqnum=182 expectedseqnum=0 rcv_base=180 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 22.689260 send         data id=182 seq=6; base=179 nextseqnum=183 expectedseqnum=0 rcv_base=180 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 22.693260 ack receive  ack frame arrived
+ 22.693260 window       base=180 nextseqnum=183 expectedseqnum=0 rcv_base=180 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 22.693260 send         data id=183 seq=7; base=180 nextseqnum=184 expectedseqnum=0 rcv_base=180 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 22.935260 receive      data frame arrived
+ 22.935260 buffer       seq=4; rcv_base=4
+ 22.935260 ack send     individual ack=4; base=180 nextseqnum=184 expectedseqnum=0 rcv_base=180 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 22.935260 deliver      application position=180
+ 22.935260 window       base=180 nextseqnum=184 expectedseqnum=0 rcv_base=181 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 22.939260 receive      data frame arrived
+ 22.939260 buffer       seq=5; rcv_base=5
+ 22.939260 ack send     individual ack=5; base=180 nextseqnum=184 expectedseqnum=0 rcv_base=181 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 22.939260 deliver      application position=181
+ 22.939260 window       base=180 nextseqnum=184 expectedseqnum=0 rcv_base=182 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 22.943260 receive      data frame arrived
+ 22.943260 buffer       seq=6; rcv_base=6
+ 22.943260 ack send     individual ack=6; base=180 nextseqnum=184 expectedseqnum=0 rcv_base=182 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 22.943260 deliver      application position=182
+ 22.943260 window       base=180 nextseqnum=184 expectedseqnum=0 rcv_base=183 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 22.947260 receive      data frame arrived
+ 22.947260 buffer       seq=7; rcv_base=7
+ 22.947260 ack send     individual ack=7; base=180 nextseqnum=184 expectedseqnum=0 rcv_base=183 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 22.947260 deliver      application position=183
+ 22.947260 window       base=180 nextseqnum=184 expectedseqnum=0 rcv_base=184 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+ 23.185288 ack receive  ack frame arrived
+ 23.185288 window       base=181 nextseqnum=184 expectedseqnum=0 rcv_base=184 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 23.185288 send         data id=184 seq=0; base=181 nextseqnum=185 expectedseqnum=0 rcv_base=184 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 23.189288 ack receive  ack frame arrived
+ 23.189288 window       base=182 nextseqnum=185 expectedseqnum=0 rcv_base=184 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 23.189288 send         data id=185 seq=1; base=182 nextseqnum=186 expectedseqnum=0 rcv_base=184 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 23.193288 ack receive  ack frame arrived
+ 23.193288 window       base=183 nextseqnum=186 expectedseqnum=0 rcv_base=184 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 23.193288 send         data id=186 seq=2; base=183 nextseqnum=187 expectedseqnum=0 rcv_base=184 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 23.197288 ack receive  ack frame arrived
+ 23.197288 window       base=184 nextseqnum=187 expectedseqnum=0 rcv_base=184 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 23.197288 send         data id=187 seq=3; base=184 nextseqnum=188 expectedseqnum=0 rcv_base=184 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 23.439288 receive      data frame arrived
+ 23.439288 buffer       seq=0; rcv_base=0
+ 23.439288 ack send     individual ack=0; base=184 nextseqnum=188 expectedseqnum=0 rcv_base=184 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 23.439288 deliver      application position=184
+ 23.439288 window       base=184 nextseqnum=188 expectedseqnum=0 rcv_base=185 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 23.443288 receive      data frame arrived
+ 23.443288 buffer       seq=1; rcv_base=1
+ 23.443288 ack send     individual ack=1; base=184 nextseqnum=188 expectedseqnum=0 rcv_base=185 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 23.443288 deliver      application position=185
+ 23.443288 window       base=184 nextseqnum=188 expectedseqnum=0 rcv_base=186 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 23.447288 receive      data frame arrived
+ 23.447288 buffer       seq=2; rcv_base=2
+ 23.447288 ack send     individual ack=2; base=184 nextseqnum=188 expectedseqnum=0 rcv_base=186 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 23.447288 deliver      application position=186
+ 23.447288 window       base=184 nextseqnum=188 expectedseqnum=0 rcv_base=187 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 23.451288 receive      data frame arrived
+ 23.451288 buffer       seq=3; rcv_base=3
+ 23.451288 ack send     individual ack=3; base=184 nextseqnum=188 expectedseqnum=0 rcv_base=187 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 23.451288 deliver      application position=187
+ 23.451288 window       base=184 nextseqnum=188 expectedseqnum=0 rcv_base=188 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+ 23.689316 ack receive  ack frame arrived
+ 23.689316 window       base=185 nextseqnum=188 expectedseqnum=0 rcv_base=188 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 23.689316 send         data id=188 seq=4; base=185 nextseqnum=189 expectedseqnum=0 rcv_base=188 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 23.693316 ack receive  ack frame arrived
+ 23.693316 window       base=186 nextseqnum=189 expectedseqnum=0 rcv_base=188 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 23.693316 send         data id=189 seq=5; base=186 nextseqnum=190 expectedseqnum=0 rcv_base=188 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 23.697316 ack receive  ack frame arrived
+ 23.697316 window       base=187 nextseqnum=190 expectedseqnum=0 rcv_base=188 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 23.697316 send         data id=190 seq=6; base=187 nextseqnum=191 expectedseqnum=0 rcv_base=188 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 23.701316 ack receive  ack frame arrived
+ 23.701316 window       base=188 nextseqnum=191 expectedseqnum=0 rcv_base=188 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 23.701316 send         data id=191 seq=7; base=188 nextseqnum=192 expectedseqnum=0 rcv_base=188 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 23.943316 receive      data frame arrived
+ 23.943316 buffer       seq=4; rcv_base=4
+ 23.943316 ack send     individual ack=4; base=188 nextseqnum=192 expectedseqnum=0 rcv_base=188 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 23.943316 deliver      application position=188
+ 23.943316 window       base=188 nextseqnum=192 expectedseqnum=0 rcv_base=189 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 23.947316 receive      data frame arrived
+ 23.947316 buffer       seq=5; rcv_base=5
+ 23.947316 ack send     individual ack=5; base=188 nextseqnum=192 expectedseqnum=0 rcv_base=189 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 23.947316 deliver      application position=189
+ 23.947316 window       base=188 nextseqnum=192 expectedseqnum=0 rcv_base=190 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 23.951316 receive      data frame arrived
+ 23.951316 buffer       seq=6; rcv_base=6
+ 23.951316 ack send     individual ack=6; base=188 nextseqnum=192 expectedseqnum=0 rcv_base=190 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 23.951316 deliver      application position=190
+ 23.951316 window       base=188 nextseqnum=192 expectedseqnum=0 rcv_base=191 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 23.955316 receive      data frame arrived
+ 23.955316 buffer       seq=7; rcv_base=7
+ 23.955316 ack send     individual ack=7; base=188 nextseqnum=192 expectedseqnum=0 rcv_base=191 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 23.955316 deliver      application position=191
+ 23.955316 window       base=188 nextseqnum=192 expectedseqnum=0 rcv_base=192 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+ 24.193344 ack receive  ack frame arrived
+ 24.193344 window       base=189 nextseqnum=192 expectedseqnum=0 rcv_base=192 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 24.193344 send         data id=192 seq=0; base=189 nextseqnum=193 expectedseqnum=0 rcv_base=192 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 24.197344 ack receive  ack frame arrived
+ 24.197344 window       base=190 nextseqnum=193 expectedseqnum=0 rcv_base=192 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 24.197344 send         data id=193 seq=1; base=190 nextseqnum=194 expectedseqnum=0 rcv_base=192 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 24.201344 ack receive  ack frame arrived
+ 24.201344 window       base=191 nextseqnum=194 expectedseqnum=0 rcv_base=192 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 24.201344 send         data id=194 seq=2; base=191 nextseqnum=195 expectedseqnum=0 rcv_base=192 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 24.205344 ack receive  ack frame arrived
+ 24.205344 window       base=192 nextseqnum=195 expectedseqnum=0 rcv_base=192 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 24.205344 send         data id=195 seq=3; base=192 nextseqnum=196 expectedseqnum=0 rcv_base=192 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 24.447344 receive      data frame arrived
+ 24.447344 buffer       seq=0; rcv_base=0
+ 24.447344 ack send     individual ack=0; base=192 nextseqnum=196 expectedseqnum=0 rcv_base=192 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]
+ 24.447344 deliver      application position=192
+ 24.447344 window       base=192 nextseqnum=196 expectedseqnum=0 rcv_base=193 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 24.451344 receive      data frame arrived
+ 24.451344 buffer       seq=1; rcv_base=1
+ 24.451344 ack send     individual ack=1; base=192 nextseqnum=196 expectedseqnum=0 rcv_base=193 sender_window=[0, 1, 2, 3] receiver_window=[1, 2, 3, 4]
+ 24.451344 deliver      application position=193
+ 24.451344 window       base=192 nextseqnum=196 expectedseqnum=0 rcv_base=194 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 24.455344 receive      data frame arrived
+ 24.455344 buffer       seq=2; rcv_base=2
+ 24.455344 ack send     individual ack=2; base=192 nextseqnum=196 expectedseqnum=0 rcv_base=194 sender_window=[0, 1, 2, 3] receiver_window=[2, 3, 4, 5]
+ 24.455344 deliver      application position=194
+ 24.455344 window       base=192 nextseqnum=196 expectedseqnum=0 rcv_base=195 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 24.459344 receive      data frame arrived
+ 24.459344 buffer       seq=3; rcv_base=3
+ 24.459344 ack send     individual ack=3; base=192 nextseqnum=196 expectedseqnum=0 rcv_base=195 sender_window=[0, 1, 2, 3] receiver_window=[3, 4, 5, 6]
+ 24.459344 deliver      application position=195
+ 24.459344 window       base=192 nextseqnum=196 expectedseqnum=0 rcv_base=196 sender_window=[0, 1, 2, 3] receiver_window=[4, 5, 6, 7]
+ 24.697372 ack receive  ack frame arrived
+ 24.697372 window       base=193 nextseqnum=196 expectedseqnum=0 rcv_base=196 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 24.697372 send         data id=196 seq=4; base=193 nextseqnum=197 expectedseqnum=0 rcv_base=196 sender_window=[1, 2, 3, 4] receiver_window=[4, 5, 6, 7]
+ 24.701372 ack receive  ack frame arrived
+ 24.701372 window       base=194 nextseqnum=197 expectedseqnum=0 rcv_base=196 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 24.701372 send         data id=197 seq=5; base=194 nextseqnum=198 expectedseqnum=0 rcv_base=196 sender_window=[2, 3, 4, 5] receiver_window=[4, 5, 6, 7]
+ 24.705372 ack receive  ack frame arrived
+ 24.705372 window       base=195 nextseqnum=198 expectedseqnum=0 rcv_base=196 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 24.705372 send         data id=198 seq=6; base=195 nextseqnum=199 expectedseqnum=0 rcv_base=196 sender_window=[3, 4, 5, 6] receiver_window=[4, 5, 6, 7]
+ 24.709372 ack receive  ack frame arrived
+ 24.709372 window       base=196 nextseqnum=199 expectedseqnum=0 rcv_base=196 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 24.709372 send         data id=199 seq=7; base=196 nextseqnum=200 expectedseqnum=0 rcv_base=196 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 24.951372 receive      data frame arrived
+ 24.951372 buffer       seq=4; rcv_base=4
+ 24.951372 ack send     individual ack=4; base=196 nextseqnum=200 expectedseqnum=0 rcv_base=196 sender_window=[4, 5, 6, 7] receiver_window=[4, 5, 6, 7]
+ 24.951372 deliver      application position=196
+ 24.951372 window       base=196 nextseqnum=200 expectedseqnum=0 rcv_base=197 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 24.955372 receive      data frame arrived
+ 24.955372 buffer       seq=5; rcv_base=5
+ 24.955372 ack send     individual ack=5; base=196 nextseqnum=200 expectedseqnum=0 rcv_base=197 sender_window=[4, 5, 6, 7] receiver_window=[5, 6, 7, 0]
+ 24.955372 deliver      application position=197
+ 24.955372 window       base=196 nextseqnum=200 expectedseqnum=0 rcv_base=198 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 24.959372 receive      data frame arrived
+ 24.959372 buffer       seq=6; rcv_base=6
+ 24.959372 ack send     individual ack=6; base=196 nextseqnum=200 expectedseqnum=0 rcv_base=198 sender_window=[4, 5, 6, 7] receiver_window=[6, 7, 0, 1]
+ 24.959372 deliver      application position=198
+ 24.959372 window       base=196 nextseqnum=200 expectedseqnum=0 rcv_base=199 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 24.963372 receive      data frame arrived
+ 24.963372 buffer       seq=7; rcv_base=7
+ 24.963372 ack send     individual ack=7; base=196 nextseqnum=200 expectedseqnum=0 rcv_base=199 sender_window=[4, 5, 6, 7] receiver_window=[7, 0, 1, 2]
+ 24.963372 deliver      application position=199
+ 24.963372 window       base=196 nextseqnum=200 expectedseqnum=0 rcv_base=200 sender_window=[4, 5, 6, 7] receiver_window=[0, 1, 2, 3]
+ 25.201400 ack receive  ack frame arrived
+ 25.201400 window       base=197 nextseqnum=200 expectedseqnum=0 rcv_base=200 sender_window=[5, 6, 7, 0] receiver_window=[0, 1, 2, 3]
+ 25.205400 ack receive  ack frame arrived
+ 25.205400 window       base=198 nextseqnum=200 expectedseqnum=0 rcv_base=200 sender_window=[6, 7, 0, 1] receiver_window=[0, 1, 2, 3]
+ 25.209400 ack receive  ack frame arrived
+ 25.209400 window       base=199 nextseqnum=200 expectedseqnum=0 rcv_base=200 sender_window=[7, 0, 1, 2] receiver_window=[0, 1, 2, 3]
+ 25.213400 ack receive  ack frame arrived
+ 25.213400 window       base=200 nextseqnum=200 expectedseqnum=0 rcv_base=200 sender_window=[0, 1, 2, 3] receiver_window=[0, 1, 2, 3]

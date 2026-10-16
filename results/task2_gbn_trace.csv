@@ -1,0 +1,19 @@
+event,sender,packet,receiver,ack,window
+1,Send initial burst,"0,1,2,3","Deliver 0,1; lose 2; discard 3","Send 0,1,1",S[0-3]; E=2
+2,Receive ACK0; send 4,4,In flight,Apply 0,S[1-4]; E=2
+3,Receive ACK1; send 5,5,In flight,Apply 1,S[2-5]; E=2
+4,Receive duplicate ACK1,-,Waiting for 2,Ignore 1,S[2-5]; E=2
+5,4 reaches receiver,4,Discard out of order,Send 1,S[2-5]; E=2
+6,5 reaches receiver,5,Discard out of order,Send 1,S[2-5]; E=2
+7,Duplicate ACKs arrive,-,Waiting for 2,"Ignore 1,1",S[2-5]; E=2
+8,Timer for 2 expires,"2,3,4,5",Resend all outstanding,-,S[2-5]; E=2
+9,Retries reach receiver,"2,3,4,5","Deliver 2,3,4,5 in order","Send 2,3,4,5",S[2-5]; E=6
+10,Receive ACK2; send 6,6,In flight,Apply 2,S[3-6]; E=6
+11,Receive ACK3; send 7,7,In flight,Apply 3,S[4-7]; E=6
+12,Receive ACK4; send 8,8,In flight,Apply 4,S[5-8]; E=6
+13,Receive ACK5; send 9,9,In flight,Apply 5,S[6-9]; E=6
+14,Final burst arrives,"6,7,8,9","Deliver 6,7,8,9","Send 6,7,8,9",S[6-9]; E=10
+15,Receive ACK6,-,All delivered,Apply 6,S[7-9]; E=10
+16,Receive ACK7,-,All delivered,Apply 7,S[8-9]; E=10
+17,Receive ACK8,-,All delivered,Apply 8,S[9]; E=10
+18,Receive ACK9,-,All delivered,Apply 9,S empty; E=10
